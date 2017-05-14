@@ -1,0 +1,28 @@
+/*body背景颜色*/
+.body_bgc{
+	background-color: RGB(245,245,245);
+}
+/*主题色 RGB(147,196,87)*/
+.thene_bg{
+	background-color: RGB(147,196,87);
+}
+.theme_co{
+	color: RGB(147,196,87);
+}
+.theme_bo{
+	border-color: RGB(147,196,87) !important;
+}
+.fre_bg1{
+	background-color: #fff;
+}
+.fre_bg2{
+	background-color: RGB(236,236,236);
+}
+.fre_co1{
+	color: #fff;
+}
+.mem_p_on{
+	background-color: RGB(147,196,87);
+	color: #fff;
+	border-color: RGB(147,196,87) !important;
+}

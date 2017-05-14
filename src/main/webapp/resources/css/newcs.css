@@ -1,0 +1,188 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+.headcs{
+	width: 90%;
+	height: 3rem;
+	line-height: 3rem;
+	text-align: center;
+	padding: 0px 5%;
+}
+.headcs_img{
+	height: 1rem;
+	margin-top: 1rem;
+}
+.topbz{
+	width: 78%;
+	height: 5rem;
+	border-bottom: 1px solid #ccc;
+	padding: 0 11%;
+}
+.topbz_zt{
+	width: 100%;
+	height: 5rem;
+	margin: auto;
+	color: RGB(59,59,59);
+	float: left;
+}
+.topbz_zt_l{
+	float: left;
+	height: 4rem;
+	text-align: center;
+	padding-top: 1rem;
+	margin: auto;
+    width: 28%;
+}
+.topbz_zt_l_t{
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+	width: 1.5rem;
+	height: 1.5rem;
+	border-radius: 100px;
+	line-height: 1.5rem;
+	text-align: center;
+	margin: auto;
+}
+.topbz_zt_r{
+	float: right;
+	height: 4rem;
+	text-align: center;
+	padding-top: 1rem;
+	margin: auto;
+    width: 28%;
+}
+.jindu{
+	border: 3px solid RGB(104,177,80);
+	margin:auto;
+	margin-top: 1.55rem;
+	width: 70%;
+}
+.jindu2{
+	border: 1px solid #ccc;
+	margin:auto;
+	margin-top: 1.7rem;
+	width: 70%;
+}
+.bzcs{
+	background-color: #ccc !important;
+	color: gray !important;
+}
+.chonzhi{
+	width: 90%;
+	padding: 0 5%;
+}
+.tishi{
+	width: 100%;
+	height: 4rem;
+	line-height: 4rem;
+	font-size: 15px;
+}
+.pos{
+	width: 100%;
+	height: 2rem;
+	padding-left: 4px;
+	border: none;
+	outline:none;
+	margin: auto;
+	font-size: 16px;
+}
+.pos2{
+	width: 100%;
+	height: 2rem;
+	padding-left: 4px;
+	border: none;
+	outline:none;
+	margin: auto;
+	font-size: 16px;
+}
+.poss{
+	width: 100%;
+	border: 2px solid #ccc;
+	height: 2rem;
+	margin-top: -2.7rem;
+}
+.poss2{
+	width: 100%;
+	border: 2px solid RGB(239,46,47);
+	height: 2rem;
+	margin-top: -2.7rem;
+}
+.poss3{
+	width: 100%;
+	border: 2px solid #ccc;
+	height: 2rem;
+	margin-top: -2.7rem;
+}
+.subnit{
+	width: 90%;
+	height: 3rem;
+	text-align: center;
+	line-height: 3rem;
+	border-radius:3px;
+	margin: auto;
+	margin-top: 3rem;
+}
+.tishi_l{
+	width: 60%;height: 4rem;float: left;
+}
+.yanzhen{
+	cursor:pointer;
+	text-align: center;
+	width: 98%;
+	height: 3rem;
+	background-color: RGB(239,46,47);
+	color: #fff;
+	line-height: 3rem;
+	margin-top: 0.5rem;
+	float: right;
+	border-radius:3px ;
+}
+.tsa{
+	width: 90%;
+	margin: auto;
+	margin-top: 4rem;
+	color: gray;
+}
+.tishi_r{
+	width: 38%;float: right;height: 4rem;
+}
+.color1{
+	color: RGB(239,46,47);
+}
+.color2{
+	color: #fff;
+}
+.color3{
+	color: gray;
+}
+.color4{
+	color: #ccc;
+}
+.bacolor1{
+	background-color: RGB(239,46,47);
+}
+.bacolor2{
+	background-color: #fff;
+}
+.bacolor3{
+	background-color: RGB(228,228,228);
+}
+.bacolor4{
+	background-color: RGB(104,177,80);
+}
+.bacolor5{
+	background-color: RGB(242,242,242)
+}
+.fontsiez1{
+	font-size: 13px;
+}
+.fontsiez2{
+    font-size: 15px;
+}
+.float1{
+	float: left;
+}
+.float2{
+	float: right;
+}

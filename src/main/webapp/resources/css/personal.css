@@ -1,0 +1,500 @@
+.toolbar {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: 4.4rem;
+    line-height: 4.4rem;
+    background: #ef3030;
+    color: #fff;
+}
+
+.toolbar h2 {
+    font-size: 1.8rem;
+    text-align: center;
+    margin: 0 7rem;
+}
+
+.toolbar .nav_ico {
+    width: 3.5rem;
+    height: 4.4rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.toolbar .nav_back {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.toolbar .nav_more {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.toolbar .nav_home {
+    position: absolute;
+    top: 0;
+    right: 3.5rem;
+}
+
+.toolbar .nav_action {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 3.5rem;
+    max-width: 6rem;
+    padding-right: 1rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+
+
+
+/*底部*/
+.plc_footer {
+    padding-bottom: 4.5rem;
+    background: #fff;
+}
+
+.plc_footer .usr_bar {
+    padding: 1.5rem 2rem;
+    height: 1.5rem;
+    border-bottom: .1rem solid #e6e6e6;
+}
+
+.plc_footer .usr_bar span {
+    float: left;
+    padding: 0 .7rem;
+    color: #197fe7;
+    line-height: 1.5rem;
+}
+
+.plc_footer .usr_bar a:first-child span {
+    padding-left: 0;
+    border-right: .1rem solid #e6e6e6;
+}
+
+.plc_footer .usr_bar a:last-child span {
+    float: right;
+    padding: 0;
+}
+
+.plc_footer .version {
+    padding: 0 14.84375%;
+    overflow: hidden;
+    line-height: 5rem;
+}
+
+.plc_footer .version span {
+    float: left;
+    width: 33.33333%;
+    color: #6e7f89;
+    text-align: center;
+}
+
+.plc_footer .version .touch {
+    color: #aeb8be;
+}
+
+.plc_footer .gome_info {
+    color: #bfc2c5;
+    text-align: center;
+    line-height: 1.8rem;
+}
+
+.grid {
+    box-sizing: border-box;
+    display: block;
+    width: 100%
+}
+
+.grid .row {
+    box-sizing: border-box;
+    display: block;
+    width: 100%
+}
+
+.grid .column_1, .grid .column_2, .grid .column_3, .grid .column_4, .grid .column_5, .grid .column_6, .grid .column_7, .grid .column_8, .grid .column_9, .grid .column_10, .grid .column_11, .grid .column_12 {
+    box-sizing: border-box;
+    display: block;
+    float: left
+}
+
+.grid, .grid .row, .grid .column_1:before, .grid .column_2:before, .grid .column_3:before, .grid .column_4:before, .grid .column_5:before, .grid .column_6:before, .grid .column_7:before, .grid .column_8:before, .grid .column_9:before, .grid .column_10:before, .grid .column_11:before, .grid .column_12:before {
+    content: " ";
+    display: table
+}
+
+.grid, .grid .column_1:after, .grid .column_2:after, .grid .column_3:after, .grid .column_4:after, .grid .column_5:after, .grid .column_6:after, .grid .column_7:after, .grid .column_8:after, .grid .column_9:after, .grid .column_10:after, .grid .column_11:after, .grid .column_12:after {
+    clear: both
+}
+
+.grid .column_1 {
+    width: 8.33333333%
+}
+
+.grid .column_2 {
+    width: 16.66666667%
+}
+
+.grid .column_3 {
+    width: 25%
+}
+
+.grid .column_4 {
+    width: 33.33333333%
+}
+
+.grid .column_5 {
+    width: 41.66666667%
+}
+
+.grid .column_6 {
+    width: 50%
+}
+
+.grid .column_7 {
+    width: 58.33333333%
+}
+
+.grid .column_8 {
+    width: 66.66666667%
+}
+
+.grid .column_9 {
+    width: 75%
+}
+
+.grid .column_10 {
+    width: 83.33333333%
+}
+
+.grid .column_11 {
+    width: 91.66666667%
+}
+
+.grid .column_12 {
+    width: 100%
+}
+
+.grid2:after, .grid3:after, .grid4:after, .grid5:after, .grid6:after {
+    content: " ";
+    display: table;
+    clear: both
+}
+
+.grid6 > *, .grid5 > *, .grid4 > *, .grid3 > *, .grid2 > * {
+    box-sizing: border-box;
+    display: block;
+    float: left
+}
+
+.grid6 > :before, .grid5 > :before, .grid4 > :before, .grid3 > :before, .grid2 > :before {
+    content: " ";
+    display: table
+}
+
+.grid6 > :after, .grid5 > :after, .grid4 > :after, .grid3 > :after, .grid2 > :after {
+    clear: both
+}
+
+.grid6 > * {
+    width: 16.66666667%
+}
+
+.grid5 > * {
+    width: 20%
+}
+
+.grid4 > * {
+    width: 25%
+}
+
+.grid3 > * {
+    width: 33.33333333%
+}
+
+.grid2 > * {
+    width: 50%
+}
+
+header * {
+    line-height: 1;
+}
+
+nav.toolbar {
+    margin-bottom: 0;
+}
+
+.toolbar .font_icon {
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+.toolbar .msg .tip {
+    position: absolute;
+    width: .75rem;
+    height: .75rem;
+    right: 1.2rem;
+    top: .7rem;
+    background-color: #ef3030;
+    border: .1rem solid #fff;
+    border-radius: 50%;
+}
+
+/*图标按钮 start 2015/8/10 14:55:03*/
+.module .icon_btn {
+    padding-top: 1.3rem;
+    padding-bottom: 2.1rem;
+    color: #666;
+}
+
+.icon_btn .icon,
+.icon_btn .count,
+.icon_btn .label {
+    display: block;
+    text-align: center;
+}
+
+.icon_btn .icon,
+.icon_btn .count {
+    position: relative;
+    font-size:1.7rem;
+    margin-bottom:0.3rem;
+    line-height: 2rem;
+}
+
+.icon_btn .count sup,
+.icon_btn .icon sup {
+    font-size: .5rem;
+    font-weight: bold;
+    transform: translate(25%, -100%);
+    -webkit-transform: translate(25%, -100%);
+}
+
+.module .icon_btn .icon sup {
+    position: absolute;
+    right: 0;
+    top: 0;
+    border: 1px solid #ef3030;
+    font-size: .8rem;
+    line-height: .8rem;
+    border-radius: 1.3rem;
+    min-width: .8rem;
+    height: .8rem;
+    padding: .25rem;
+    color: #ef3030;
+    background-color: #fff;
+    font-family: "Microsoft YaHei", Arial, "Helvetica";
+    font-weight: normal;
+    transform: translateX(50%);
+    -webkit-transform: translateX(50%);
+}
+
+/*end*/
+
+/*头像区域 start 2015/8/10 14:46:51*/
+#header {
+    box-sizing: border-box;
+    height: 17.25rem;
+    background-color: #ef3030;
+    background-image: url(../images/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#header * {
+    color: #fff;
+}
+
+#header .name {
+    margin-bottom: .75rem;
+    line-height: 1.6rem;
+    font-size: 1.6rem;
+}
+
+#header .user_level {
+    margin-bottom: 1.5rem;
+    line-height: 1.5rem;
+    font-size: 1.1rem;
+}
+
+#header .user_level .icon {
+    display: block;
+    height: 1.5rem;
+    width: 1.5rem;
+    margin-right: .5rem;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#header .user_level .label {
+    opacity: .7;
+    text-align: center;
+    margin:0 auto;
+}
+
+#header .icon_btn:last-child .label {
+    border-right: none;
+}
+
+#header .user_info {
+    padding-top: .5rem;
+    position: relative;
+    margin: auto;
+    text-align: center;
+}
+
+#header .portrait {
+    margin: auto;
+    margin-bottom: 1rem;
+    height: 5.5rem;
+    width: 5.5rem;
+    background-color: #fff;
+    border-radius: 50%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+/*end*/
+
+/**start 2015/8/10 15:12:12*/
+.module,
+.simple_module {
+    display: block;
+    margin-bottom: 1rem;
+    background-color: #fff;
+}
+
+.module .icon_btn .count,
+.module .icon_btn .icon,
+.simple_module .icon {
+    margin-left: auto;
+    margin-right: auto;
+    width: 3rem;
+    line-height: 3rem;
+    font-size: 2.2rem;
+}
+
+.module .title,
+.simple_module_group .simple_module {
+    border-bottom: 1px solid #e6e6e6;
+    padding-left: 0;
+}
+
+.simple_module_group .simple_module:last-child,
+.simple_module_group .simple_module:only-child {
+    border-bottom: none;
+}
+
+.module .title,
+.simple_module {
+    position: relative;
+    line-height: 4rem;
+    color: #333;
+    font-size: 1.5rem;
+}
+
+.module .title,
+.simple_module_group .simple_module {
+    margin-left: 1.5rem;
+}
+
+.simple_module {
+    padding-left: 1.5rem;
+}
+
+.simple_module .icon{
+    background-color:orange;
+}
+
+.module .sub_info,
+.simple_module .sub_info {
+    height: 8rem;
+}
+
+.module .title:after,
+.simple_module:after {
+    content: "0";
+    position: absolute;
+    line-height: 4rem;
+    right: 1.5rem;
+    top: 0;
+    color: #999;
+    font-family: "gome_icon";
+    font-size: 1.2rem;
+    -webkit-transform: rotate(180deg) translateY(5%);
+    transform: rotate(180deg) translateY(5%);
+}
+
+.module .title .desc,
+.simple_module .desc {
+    float: right;
+    margin-right: 3rem;
+    line-height: 4rem;
+    color: #999;
+    font-size: 1.2rem;
+}
+
+.simple_module_group {
+    margin-bottom: 1rem;
+    background-color: #fff;
+}
+
+.simple_module_group .simple_module {
+    margin-bottom: 0;
+}
+
+/*end*/
+/* icons start 2015/8/11 10:26:21 */
+.module .title .icon,
+.simple_module .icon {
+    float: left;
+    display: block;
+    padding: .5rem;
+    margin: 1rem 1rem 0 0;
+    width: 1.2rem;
+    min-width: 1.2rem;
+    height: 1.2rem;
+    min-height: 1.2rem;
+    line-height: 1.2rem;
+    border-radius: 1.2rem;
+    color: #fff;
+    text-align: center;
+    font-family: "gome_icon";
+    font-size: 1.1rem;
+}
+
+.orders .title .icon {
+    background-color: #ffaf02;
+}
+
+.fourtune .title .icon {
+    background-color: #ff7b5c;
+}
+
+.pre_order .icon {
+    background-color: #5ccc33;
+}
+
+.present .icon {
+    background-color: #08d6bb;
+}
+
+
+.number_change {
+    position: relative;
+    display: block;
+    height: 3.5rem;
+    line-height: 3.7rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.number_change span {
+    position: absolute;
+    margin-top: 0.7rem;
+}

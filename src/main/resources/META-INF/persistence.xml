@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="ttmall">
+		<class>com.troika.emall.model.TMallAddress</class>
+		<class>com.troika.emall.model.TMallAlipayDetail</class>
+		<class>com.troika.emall.model.TMallArea</class>
+		<class>com.troika.emall.model.TMallBigHit</class>
+		<class>com.troika.emall.model.TMallCart</class>
+		<class>com.troika.emall.model.TMallCartDetail</class>
+		<class>com.troika.emall.model.TMallCategory</class>
+		<class>com.troika.emall.model.TMallCity</class>
+		<class>com.troika.emall.model.TMallDiscount</class>
+		<class>com.troika.emall.model.TMallEvaluation</class>
+		<class>com.troika.emall.model.TMallExpireTime</class>
+		<class>com.troika.emall.model.TMallFavourite</class>
+		<class>com.troika.emall.model.TMallFeedback</class>
+		<class>com.troika.emall.model.TMallFrontCategory</class>
+		<class>com.troika.emall.model.TMallFrontGoods</class>
+		<class>com.troika.emall.model.TMallFrontSubcategory</class>
+		<class>com.troika.emall.model.TMallGood</class>
+		<class>com.troika.emall.model.TMallGoodsCommission</class>
+		<class>com.troika.emall.model.TMallGoodsPhoto</class>
+		<class>com.troika.emall.model.TMallHomeMenu</class>
+		<class>com.troika.emall.model.TMallHomeTopPic</class>
+		<class>com.troika.emall.model.TMallOrder</class>
+		<class>com.troika.emall.model.TMallOrderCancel</class>
+		<class>com.troika.emall.model.TMallOrderDetail</class>
+		<class>com.troika.emall.model.TMallProvince</class>
+		<class>com.troika.emall.model.TMallReturnRecord</class>
+		<class>com.troika.emall.model.TMallService</class>
+		<class>com.troika.emall.model.TMallShoeProperty</class>
+		<class>com.troika.emall.model.TMallSubcategory</class>
+		<class>com.troika.emall.model.TMallSupplierDetail</class>
+		<class>com.troika.emall.model.TMallUser</class>
+		<class>com.troika.emall.model.TMallWarehouse</class>
+		<class>com.troika.emall.model.TSmsCheck</class>
+		<class>com.troika.emall.model.TSmsCheckPK</class>
+		<class>com.troika.emall.model.TSmsSupplier</class>
+		<class>com.troika.emall.model.TSysAccount</class>
+		<class>com.troika.emall.model.TSysParam</class>
+		<class>com.troika.emall.model.TMallCommissionRecord</class>
+		<class>com.troika.emall.model.TMallMakerCommissionRecord</class>
+		<class>com.troika.emall.model.TMallReturnImg</class>
+		<class>com.troika.emall.model.TMallUserCashRecord</class>
+	</persistence-unit>
+</persistence>

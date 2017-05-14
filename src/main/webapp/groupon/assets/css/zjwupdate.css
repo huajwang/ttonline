@@ -1,0 +1,472 @@
+/* 銆嬨�鎴戠殑鍙戣捣銆嬨�  sponsor_my.jsp*/
+
+	.mysptop{
+				width: 100%;
+				height: 4rem;
+				background: #fff;
+			}
+			.mysptop_zt{
+				width: 100%;
+				height: 4rem;
+				border-bottom: 2px solid #ccc;
+			}
+			.mysptop_zt_pu{
+				width: 25%;
+				float: left;
+	         	height: 2.75rem; 
+				padding-top: 1.25rem;
+				color: rgb(102,102,102);
+			
+			}
+			.mysptop_zt_pu1{
+				width: 100%;
+				height: 1.5rem;
+				text-align: center;
+				line-height: 1.5rem;
+			}
+			.mysptop_zt_pu2{
+				border-left: 1px solid #ccc;
+				border-right: 1px solid #ccc;
+			}
+			.myspselect{
+				border-bottom: 2px solid rgb(240,0,13);
+				color: rgb(240,0,13) !important;
+			}
+			.mysplist{
+				width: 100%;
+				margin-top: 1rem;
+			}
+			.mysplist_pro{
+				width: 100%;
+				height: 7rem;
+				border-bottom: 1px solid #ccc;
+				border-top: 1px solid #ccc;
+				background-color: #fff;
+			    padding: 0 3%;
+			}
+			.mysplist_pro_l{
+			    height: 4rem;
+    			margin-top: 1.5rem;
+			    float: left;
+			}
+			.mysplist_pro_c{
+			    width: 61%;
+				height: 4rem;
+			    float: left;
+			    margin-top: 1.5rem;
+			    padding-left: 3%;
+			}
+			.mysplist_pro_r{
+				height: 1rem;
+			    float: right;
+    			height: 1.5rem;
+    			margin-top: 2.75rem;
+/*     			margin-right: 3%; */
+			}
+			.mysplist_pro_c_d{
+				width: 100%;
+				height: 33.3%;
+			    line-height: 21px;
+			}
+			.myspts{
+				font-size: 13px;
+				display: inline-block;
+				float: right;
+				color: rgb(240,0,13);
+			}
+			.bai{
+				width: 100%;
+				height: 4rem;
+				background: #fff;
+				margin-top: 1rem;
+			    margin-bottom: 6.5rem;
+			}
+
+	/* 銆嬨� 鍏充簬娆箰鎷�sponsor_about.jsp 銆嬨�*/
+	.abouttop{
+			width: 100%;
+			height: 5rem;
+			padding: 0 3%;
+			line-height: 5rem;
+			background-color: #fff;
+		}
+		.abouttopim{
+		    height: 3rem;
+		    border-radius: 200px;
+		    margin-top: 1rem;
+		    margin-left: 3%;
+		    float: left;
+	        margin-right: 3%;
+		}
+		.abouttoph{
+			float: left;
+			margin-left: 3%;
+		}
+		.aboutreco{
+			width: 100%;
+			min-height: 1rem;
+			max-height: 100rem;
+			padding: 0.5rem 3%;
+			background-color: #fff;
+		}
+		.aboutphon{
+			width:100%;
+			height: 3rem;
+			background: rgb(245,245,245);
+			padding: 0 3%;
+			line-height: 3rem;
+			border-bottom: 1px solid #ccc;
+		}
+		.aboutcol{
+			color: rgb(153,153,153);
+		}
+		.aboutkf{
+			width:100%;
+			height: 4rem;
+			background-color: #fff;
+			line-height: 4rem;
+			padding: 0 3%;
+		}	
+		
+	  /*>>> sponsor_help.jsp 銆�甯姪涓績 */
+	  .help_menu{
+			width: 94%;
+			height: 3.3rem;
+			border-bottom: 1px solid #ccc;
+			padding: 0 3%;
+			line-height: 3rem;
+			background-color: #fff;
+		}
+		.help_menu1{
+			width: 94%;
+			height: 4rem;
+			border-bottom: 1px solid #ccc;
+			padding: 0 3%;
+			line-height: 4rem;
+			background-color: #fff;
+			font-size: 16px;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			display: -webkit-box;
+			-webkit-line-clamp: 1;
+			-webkit-box-orient: vertical;
+		}
+		.help_menuimg{
+			height: 2.2rem;
+   			margin-bottom: 0.3rem;
+		}
+		.helpjiant{
+			height: 1.2rem;
+		    float: right;
+		    margin-top: 0.9rem;
+		}
+		.help_menuimh{
+			border-radius: 100px;
+			height: 2.5rem;
+    		margin-bottom: -0.9rem;
+		}
+		.help_menu1 input{
+			height: 3.7rem;
+		    border: none;
+		    outline:none;
+		    width: 44%;
+		}
+	  
+    /*   ..sponsor_recommend_list.jsp 銆�鎻愮幇璁板綍..... */
+       .remlist{
+			width: 100%;
+			padding: 0 3%;
+		    float: left;
+    		margin-top: 1rem;
+		}
+		.remlist_img{
+			border-radius: 100px;
+		    height: 3rem;
+    		float: left;
+		    margin-top: 0.5rem;
+    		margin-right: 0.5rem;
+		}
+		.remlist_div{
+		    width: 78%;
+/* 		    height: 4rem; */
+		    float: left;
+		}
+		.remlist_div_pu{
+			width: 100%;
+		    height: 4rem;
+		    float: left;
+		    font-size: 14px;
+		}
+		.remlist_div_sp{
+			width: 90%;
+		    height: 50%;
+		    overflow: hidden;
+		    display: inline-block;
+		    line-height: 2rem;
+		    float: left;
+		}
+		.remlist_div_sp1{
+		    width: 50%;
+		    height: 2rem;
+		    display: inline-block;
+		    float: left;
+		    line-height: 2rem;
+		    text-align: left;
+		   
+		}
+		.remcolor{
+			color: rgb(208,39,37);
+		}
+		.recommendrecord{
+			margin-bottom: 0.5rem;
+			float: left;
+		}
+		.remco_ts{
+			width: 100%;
+			color: rgb(208,39,37);
+			text-align: center;
+			float: left;
+			position:fixed;
+    		bottom: 2rem;
+    		font-size: 17px;
+    		font-weight: bold;
+		}
+		
+		/* >> sponnsor_back_detail.jsp 閫�揣璇︽儏 >>> */
+		
+		.back_detail_top{
+			width: 92%;
+			height: 3.5rem;
+			padding: 0 4%;
+			border-bottom: 1px solid #ccc;
+			line-height: 3.5rem;
+		    color: #808080;
+		    font-weight: bold;
+		    font-size: 18px;
+		}
+		.back_detail_list{
+			width: 99%;
+/* 			padding: 0 4%; */
+			border-top: 1px solid #ccc;
+			float: right;
+			padding-left: 4%;
+		}
+		.list_product{
+			width: 100%;
+			height: 5rem;
+			line-height: 5rem;
+		    padding-right: 4%;
+		}
+		.list_product_pro{
+		    height: 3rem;
+    		margin-bottom: -1rem;
+		}
+		.list_product_pri{
+		    display: inline-block;
+    		margin-left: 5%;
+    		color: rgb(151,151,151);
+		}
+		.list_product_num{
+		    display: inline-block;
+    		float: right;
+    		color: rgb(151,151,151);
+		}
+		.back_pric{
+			width: 92%;
+			border-bottom: 1px solid #ccc;
+			text-align: right;
+			margin: auto;
+			padding: 0.6rem 0;
+			font-size: 17px;
+		}
+		.abckcol{
+			color: rgb(151,151,151);
+		}
+		.abckcol1{
+			color: rgb(35,35,35);
+		}
+		.back_mem{
+			padding: 0.5rem 6%;
+		}
+		.back_mem span{
+			display: inline-block;
+		    float: left;
+		    color: #808080;
+		}
+		.back_mem_name{
+			width: 40%;
+		}
+		.back_mem_phone{
+		    width: 60%;
+		}
+		.back_mem_adress{
+			width: 100%;
+			margin-top: 0.5rem;
+		}
+		@media (max-width:435px){
+			.back_mem{
+			    font-size: 18px;
+    			font-weight: bold;
+			}
+		}
+		@media (max-width:414px){
+			.back_mem{
+			    font-size: 18px;
+    			font-weight: bold;
+			}
+		}
+		@media (max-width:375px){
+			.back_mem{
+			    font-size: 16px;
+    			font-weight: bold;
+			}
+		} 
+		@media (max-width:360px){
+			.back_mem{
+			    font-size: 16px;
+    			font-weight: bold;
+			}
+		} 
+		@media (max-width:320px){
+			.back_mem{
+			    font-size: 14px;
+    			font-weight: bold;
+			}
+		} 
+		.remcolor{
+			color: rgb(208,39,37);
+		}
+		.yybc{
+			margin-top: 1.5rem;
+			float: left;
+		    line-height: 1.7rem;
+		}
+		
+		
+		
+		
+.all_list_top{
+	width: 100%;
+	height: 6rem;
+	border-bottom: 1px solid #ccc;
+	background-color: #fff;
+}
+.all_list_top_menu{
+	width: 100%;
+	height: 4rem;
+	float: left;
+	margin-top: 1rem;
+	text-align: center;
+}
+.list_top_menu{
+	width: 33.1%;
+	height: 4rem;
+	float: left;
+    line-height: 1.6rem;
+}
+.list_top_menu1{
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+}
+.allcor{
+	color: rgb(103,103,103);
+}
+.allfon{
+	font-size: 21px;
+	font-weight: bold;
+	display: inline-block;
+  		margin-top: 0.5rem;
+}
+.alllismenu{
+	width: 100%;
+	height: 3rem;
+	border-bottom: 1px solid #ccc;
+	background-color: #fff;
+	line-height: 3rem;
+}
+.alllismenu1{
+	width: 25%;
+	height: 3rem;
+	color: rgb(103,103,103);
+	float: left;
+	text-align: center;
+}
+.allsele{
+	border-bottom: 2px solid rgb(180,59,66);
+	color: rgb(180,59,66);
+}
+/* .alllistname{ */
+/* 	width: 100%; */
+/* 	height: 3.5rem; */
+/* 	line-height: 3.5rem; */
+/*     float: left; */
+/*     padding: 0 3%; */
+/*     background-color: #fff; */
+/*     border-bottom: 1px solid #ccc; */
+/*     margin-top: 1rem; */
+/* } */
+/* .alllistname1{ */
+/* 	width: 30%; */
+/* 	float: left; */
+/* 	color: rgb(103,103,103); */
+/* } */
+/* .alllistname2{ */
+/* 	width: 50%; */
+/* 	float: left; */
+/* 	color: rgb(103,103,103); */
+/* } */
+/* .alllistname3{ */
+/* 	width: 20%; */
+/* 	float: left; */
+/* 	text-align: right; */
+/* 	color: rgb(180,59,66); */
+/*     font-size: 12px; */
+/* } */
+.allanbot{
+    float: left;
+    background: #fff;
+    width: 100%;
+}
+.an_allorder{
+	width: 100%;
+	height: 4.5rem;
+	background-color: #fff;
+	padding: 0 3%;
+	padding-top:0.5rem;
+}
+.an_fh{
+	width: 7rem;
+	height: 3rem;
+	line-height: 3rem;
+	text-align: center;
+	border-radius:5px; 
+}
+.disdown{
+	display: none;
+}
+.jiangeall{
+	width: 100%;
+	height: 4rem;
+	float: left;
+}
+/*****/
+.gr-tx-bc{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 1;
+	-webkit-box-orient: vertical;
+}
+.gr-tx-bc1{
+	display: inline-block;
+	width: 90%;
+}
+.gr-tx-bc2{
+	display: inline-block;width: 50%;text-align: center;
+}
+.gr-tx-bc3{
+	display: inline-block;width: 49%;
+}
+.gr-tx-bc4{
+	display: inline-block;width: 49%;text-align: center;
+}

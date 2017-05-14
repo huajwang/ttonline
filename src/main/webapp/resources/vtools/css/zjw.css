@@ -1,0 +1,273 @@
+body{
+	padding: 0;
+	margin: 0;
+	width:100%;
+}
+/*订单记录*/
+.fre_con{
+	width: 100%;
+}
+.fre_top{
+	width: 100%;
+	height: 4.5rem;
+	line-height: 4.5rem;
+	padding: 0 5%;
+}
+.fre_cen table{
+	width: 100%;
+}
+.fre_cen td{
+	padding: 3% 5%;
+	color: RGB(147,196,87);
+	border-bottom: 1px solid RGB(147,196,87);
+	font-size: 15px;
+}
+.fre_foo{
+	height: 5.5rem;
+	position: fixed;
+	bottom: 0;
+}
+.fre_fo_meu{
+	height: 100%;
+}
+.fre_fo_meu img{
+	width: 23%;
+    margin-top: 4%;
+}
+/*我的中心*/
+.per_top{
+    padding: 3% 0px;
+}
+.per_menu{
+	margin-top: 2%;
+}
+.per_menu img{
+	width: 24%;
+}
+.per_menu td{
+	padding: 4.5% 0 2% 0;
+	border-top: 1px solid RGB(218,218,218);
+	margin: 0;
+}
+.per_menu span{
+	font-size: 15px;
+	font-weight: bold;
+	margin-top: 3%;
+	display: inline-block;
+}
+.per_menutd{
+	border-left: 1px solid RGB(218,218,218);
+	border-right: 1px solid RGB(218,218,218);
+}
+.per_menutd2{
+	border-bottom: 1px solid RGB(218,218,218);
+}
+.per_menutd3{
+	padding: 10% 0 !important;
+}
+/*会员购买*/
+.mem_p{
+	padding: 0 6%;
+}
+.m_pbc{
+	margin: 4% 0;
+}
+.m_pbc2{
+	padding-bottom: 3%;
+}
+.m_pbc3{
+	width: 90%;margin: auto;
+}
+.m_pbc4{
+	margin: 5% 0;
+	padding: 2% 1%;
+	border-radius: 5px;
+}
+.m_pbc5{
+	border-radius: 5px;
+	text-align: center;
+	margin: auto;
+	margin-top: 8%;
+	padding: 3% 0;
+	width: 45%;
+	font-size: 17px;
+	font-weight: bold;
+}
+/*历史记录*/
+.his_l{
+	width: 10%;
+	text-align: center;
+}
+.his_l img{
+	width: 50%;
+}
+.his_r{
+	width: 86%;
+}
+.his_bc{
+	width: 68%;
+}
+.his_bc1{
+	width: 13%;
+}
+.his_bc2{
+    min-height: 1rem;
+    max-height: 14rem;
+    overflow-y: scroll;
+}
+.his_bc3{
+	margin: 2% 0;
+}
+.his_bc4{
+	width: 15%;text-align: center;padding-top: 2%;
+}
+.his_bc5{
+	border: 1px solid black;
+	border-radius: 100px;
+	display: inline-block;
+	width: 1.5rem;
+	height: 1.5rem;
+	text-align: center;
+	line-height: 1.5rem;
+	color: black;
+	font-size: 10px;
+}
+.his_bc6{
+	width: 85%;
+}
+.his_bc7{
+    padding-bottom: 1rem;
+    border-bottom: 1px solid;
+}
+.his_bc8{
+	margin: 6% 0;
+	float: left;
+	font-weight: bold;
+	font-size: 18px;
+}
+.his_bc9{
+	width: 40%;	
+	margin: 0 30%;
+	background-color: RGB(147,196,87);
+	color: #fff;
+	border-radius: 5px;
+	padding: 2% 0;
+}
+.his_bc10{
+	height: 4.5rem;
+	line-height: 4.5rem;
+	padding: 0 4%;
+	width: 100%;
+}
+.his_bc11{
+	font-weight: bold;
+	margin-left: 10%;
+	font-size: 17px;
+}
+.his_bc12{
+	height: 51%;left: 5%;top:25%
+}
+.his_bc13{
+	right: 5%;
+}
+.his_bc14{
+	margin-bottom: 3%;
+}
+.his_bc15{
+	width: 25%;
+}
+.his_bc16{
+	padding-top: 0;
+}
+.his_bc17{
+	width: 98%;padding: 2% 0;
+}
+.his_bc17_1{
+	width: 98%;margin: auto;padding: 1% 0;
+}
+.his_bc17_2{
+	width: 30%;margin: auto;padding: 1% 1%;
+}
+.his_bc18{
+	width: 98%;padding: 10% 0;
+}
+.his_bc19{
+	width: 95%;margin: 3% 2.5%;
+}
+.his_bc20{
+	right: 15%;width: 6%;top: -10%;
+}
+.his_bc21{
+	background-color: #000000;
+	position: fixed;
+	z-index: 111;
+	opacity: 0.5;
+	text-align: center;
+	margin-left: 40%;
+	margin-top: 60%;
+	padding: 3%;
+	border-radius: 8px;
+}
+.his_bc22{
+	background-color: #000000;position: fixed;z-index: 111;opacity: 0.4;width: 100%;height: 100%;
+}
+.his_bc23{
+	width: 100%;height: 100%;position: absolute;top: 0;display: none;
+}
+.his_bc24{
+	margin-bottom: 5rem;margin-top: 3%;
+}
+/*公用*/
+.fre_bor{
+	border: 1px solid;
+}
+.fre_fs3{
+	font-size: 13px;
+}
+.fre_fs4{
+	font-size: 14px;
+}
+.fre_fs5{
+	font-size: 15px;
+}
+.fre_fs7{
+	font-size: 17px;
+}
+.fre_fs8{
+	font-size: 18px;
+}
+.fre_w1{
+	width: 100%;
+}
+.fre_w03{
+	width: 30%;
+}
+.fre_w03-3{
+	width: 33.3%;
+}
+.fre_w05{
+	width: 50px;
+	height:50px;
+	border-radius:50px
+}
+.fre_fl{
+	float: left;
+}
+.fre_f4{
+	float: right;
+}
+.fre_tc{
+	text-align: center;
+}
+.fre_fw{
+	font-weight: bold;
+}
+.fre_dis{
+	display: inline-block;
+}
+.fre_po1{
+	position: relative;
+}
+.fre_po2{
+	position: absolute;
+}

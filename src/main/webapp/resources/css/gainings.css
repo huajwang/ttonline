@@ -1,0 +1,201 @@
+     .yly_or_top{
+	width: 100%;
+	height: 44px;
+	background-color:RGB(239,48,48);
+	color:RGB(254,254,253);
+}
+.or_top_left{
+	width: 10%;
+    height:44px;
+    float: left;
+    text-align: center;
+}
+.or_top_left img{
+	margin-top: 0.7rem;
+	
+} 
+.or_top_right{
+	width: 70%;
+    height: 44px;
+    float: left;
+    line-height: 44px;
+    font-weight:bold;
+    font-size: 20px;
+    margin-top:-5px;
+    
+}
+.or_top_right p{
+	margin-left:37%;
+}
+	.or_top_right2{
+		width:19%;
+		height:44px;
+		float:right;
+		text-align: right;
+	}
+	.imgs{
+		height:85%;
+		margin-left:10%;
+		margin-top:5px;
+		margin-right: 5%;
+	}
+	
+                 
+            .zhuti{
+			height:680px;
+			width: 100%;
+			position:fixed;
+			z-index:99999;
+			}
+			.zhong{
+				  width: 100%;
+				  height:25%;
+				  background-color:RGB(220,73,80);
+				  
+			     }
+		    .up{
+			width:100%;
+			height:55%;
+			}
+			.shang{
+				width:50%;
+				height:100%;
+				text-indent:0.5em;
+				float:left;
+			}     	
+			.shang_right{
+				width:50%;
+				height:100%;
+				text-indent:0.3em;
+				float:right;
+			}      
+			
+			.shang1{
+				height:40%
+			    color:RGB(249,225,227);
+			    padding-top:5%;
+			    font-size:12px;
+			    margin-top:6px;
+			    line-height:2em;
+			     color:RGB(255,255,255);
+				 
+			}
+			.shang2{
+				 height:60%;
+				 color:RGB(255,255,255);
+				 font-size:40px;
+			
+			}
+			.xia{
+				width:99%;
+				height:45%;
+				
+			}
+			.xleft{
+				width:49%;
+				height:70%;
+				float:left;
+				text-indent:0.5em;
+				border-right: 1px solid #FFF;
+				
+			} 
+			.xright{
+				width:49%;
+				height:100%;
+				float:right;
+				text-indent:0.2em;
+			}
+			.xiaa1{
+				color:RGB(240,178,180);
+				padding-top:2%;
+				 font-size:14px;
+				
+				
+				
+			}
+			.xiaa2{
+				color:RGB(253,245,246);
+				font-size: 25px;
+				line-height:-1em;
+				
+				
+			  
+			}
+			.xiab1{
+					color:RGB(240,178,180);
+					padding-top:2%;
+					 font-size:14px;
+			}
+			.xiab2{
+				color:RGB(253,245,246);
+				font-size: 25px;
+				line-height:-1em;
+				
+				
+				
+			}
+			.bottom1{
+				width:100%;
+				height:60%;
+			}
+			.bt1{  
+			   width:100%;
+			   height:12.5%;
+			   background-color:RGB(237,237,237);
+			}                                                      
+			.bta_a1{height:100%;width:28%;float:left;}
+			.bta_a2{height:100%;width:20%;float:left;color:RGB(174,174,174);line-height:3rem;}
+			.bta_a3{height:100%;width:26%;float:left;text-align:center;color:RGB(174,174,174);line-height:3rem;}
+			.bta_a4{height:100%;width:26%;float:right;text-align:center;color:RGB(174,174,174);line-height:3rem;}
+			
+			.bt2{
+			   width:100%;
+			   height:12.5%;
+			   border-bottom: 1px solid RGB(240,240,240);
+			}
+			.btb_b1{height:100%;width:28%;font-size:13px;text-indent:0.7em;float:left;}
+			.btb_bb1{height:40%;width:100%;color:RGB(224,101,105);font-size:13px;text-indent:0.7em;line-height:21px;}
+			.btb_bb2{height:60%;width:100%;color:RGB(174,174,174);font-size:12px;text-indent:0.7em;line-height:21px;}
+			.btb_b2{height:100%;width:20%;float:left;color:RGB(174,174,174);line-height:4rem;text-indent:0.7em;}
+			.btb_b3{height:100%;width:26%;float:right;text-align:center;color:RGB(174,174,174);line-height:3.8rem;}
+			.btb_b4{height:100%;width:26%;float:right;text-align:center;color:RGB(174,174,174);line-height:3.8rem;}
+			
+			.bt3{
+			   width:100%;
+			   height:12.5%;
+			   border-bottom: 1px solid RGB(240,240,240);
+			}
+			.btc_c1{height:100%;width:28%;float:left;color:RGB(174,174,174);line-height:3rem;font-size:13px;text-indent:0.7em;}
+			.btc_c2{height:100%;width:20%;float:left;color:RGB(174,174,174);line-height:3rem;text-indent:0.7em;}
+			.btc_c3{height:100%;width:26%;float:right;text-align:center;color:RGB(174,174,174);line-height:3rem;}
+			.btc_c4{height:100%;width:26%;float:right;text-align:center;color:RGB(174,174,174);line-height:3rem;}
+			
+			.bt4{
+			   width:100%;
+			   height:12.5%;
+			    border-bottom: 1px solid RGB(240,240,240);
+			    }
+			   
+			.bt5{
+			   width:100%;
+			   height:12.5%;
+			    border-bottom: 1px solid RGB(240,240,240);
+			    }
+			 
+			 .bt6{
+			   width:100%;
+			   height:12.5%;
+			   border-bottom: 1px solid RGB(240,240,240);
+	           text-indent:0.5em;
+	           line-height: 5rem;
+	           color:RGB(152,152,152);
+	           
+			    }
+			  .bt7{
+			   width:100%;
+			   height:12.5%;
+			   text-indent:0.5em;
+			   font-size: 13px;
+			   line-height: 0.5em;
+			   color:RGB(220,73,81);
+			    }

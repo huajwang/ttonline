@@ -1,0 +1,10 @@
+/* iCheck plugin Square skin, red
+----------------------------------- */
+.icheckbox_square-red { display:block;vertical-align: middle; padding: 0; width: 22px;  height: 22px; background: url(../img/dhh.png) no-repeat; border: none;float:left; border-radius:50%; overflow:hidden; margin-right:10px}
+.icheckbox_square-red { background:url(../img/dhh.png) no-repeat #fff; background-size:22px 22px}
+.icheckbox_square-red.checked { background:url(../img/dh.png) no-repeat #fff; background-size:22px 22px}
+.icheckbox_square-hide { display:none; vertical-align: middle; padding: 0; width: 22px;  height: 22px; background: url(../img/dhh.png) no-repeat; border: none;float:left; border-radius:50%; overflow:hidden; margin-right:10px}
+
+.gwc .icheckbox_square-red{ margin-top:24px}
+.tplis .icheckbox_square-red{ margin-top:37px}
+.foot .icheckbox_square-red{ margin-top:12px}

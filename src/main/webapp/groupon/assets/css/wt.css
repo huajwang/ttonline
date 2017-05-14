@@ -1,0 +1,1809 @@
+/* wt    �����ҵĹ�� */
+
+ .project_launch{
+     width:100%;
+     height:60px;
+     border-top:2px solid RGB(234,234,234);
+     border-bottom:2px solid RGB(234,234,234);
+     background-color: #fff;
+     float:right;
+     line-height: 60px;
+     color:RGB(23,23,23);
+  }
+  .project_launch_left_img{
+     margin-left: 23px;
+     margin-top: -9px;
+  }
+  .project_launch_sj{
+     float:right;
+     margin-right: 16px;
+     margin-top: 12px;
+     width: 20px;
+  }
+  
+   .Myproject{
+     width:100%;
+     height:60px;
+     border-bottom:2px solid RGB(234,234,234);
+     background-color: #fff;
+     float:right;
+     line-height: 60px;
+     color:RGB(23,23,23);
+  }
+  .Myproject_left_img{
+     margin-left: 25px;
+     margin-top: -7px;
+  }
+  .Myproject_sj{
+     float:right;
+     margin-right: 16px;
+	 margin-top: 12px;
+	 width: 20px;
+  }
+  
+  .About{
+     width:100%;
+     height:60px;
+     border-bottom:2px solid RGB(234,234,234);
+     background-color: #fff;
+     float:right;
+     line-height: 60px;
+     color:RGB(23,23,23);
+  }
+  .About_left_img{
+     margin-left: 25px;
+     margin-top: -7px;
+  }
+  .About_sj{
+     float:right;
+     margin-right: 16px;
+	 margin-top: 12px;
+	 width: 20px;
+  }
+  
+   .withdrawal{
+     width:100%;
+     height:60px;
+     border-bottom:2px solid RGB(234,234,234);
+     background-color: #fff;
+     float:right;
+     line-height: 60px;
+     color:RGB(23,23,23);
+  }
+  .withdrawal_left_img{
+     margin-left: 25px;
+     margin-top: -7px;
+  }
+  .withdrawal_sj{
+     float:right;
+     margin-right: 16px;
+	 margin-top: 12px;
+	 width: 20px;
+  }
+  
+   .exchange{
+     width:100%;
+     height:60px;
+     border-bottom:2px solid RGB(234,234,234);
+     background-color: #fff;
+     float:right;
+     line-height: 60px;
+     color:RGB(23,23,23);
+  }
+  .exchange_left_img{
+     margin-left: 25px;
+     margin-top: -7px;
+  }
+  .exchange_sj{
+     float:right;
+     margin-right: 16px;
+	 margin-top: 12px;
+	 width: 20px;
+  }
+  
+   .helpfeedback{
+     width:100%;
+     height:60px;
+     border-bottom:2px solid RGB(234,234,234);
+     background-color: #fff;
+     float:right;
+     line-height: 60px;
+     color:RGB(23,23,23);
+  }
+  .helpfeedback_left_img{
+     margin-left: 23px;
+     margin-top: -7px;
+  }
+  .helpfeedback_sj{
+     float:right;
+     margin-right: 16px;
+	 margin-top: 12px;
+	 width: 20px;
+  }
+   
+    /* ģ̬�����ʽ  */  	
+	       .mt_kuang{
+              width: 100%;
+			  height: 900px;
+			  background-color:RGB(153,153,153);
+			  z-index: 999;
+			  position: fixed;
+			  filter:alpha(opacity=50);  
+			  -moz-opacity:0.5;  
+			  -khtml-opacity: 0.5;  
+			  opacity: 0.5;
+			  display:none;
+			  margin-top:-10px;
+   
+          }
+          
+        .mt_activate{
+               width:85%;
+               height:auto;
+               margin:auto;
+               background-color:#fff;
+               border-radius:5px;
+               z-index: 9999;
+		       position:fixed;
+		       margin-left:7%;
+		       margin-top:30%;
+		       display:none; 
+		       overflow:hidden;
+           }
+        .mt_nickname{
+              color:RGB(29,29,29);
+              margin-top:15px;
+              font-size:15px;
+              text-align: center;
+              
+          }   
+          .mt_conter{
+              width:90%;
+              margin:auto;
+              font-size:13px;
+              text-indent:center;
+              line-height:2em;
+              color:RGB(202,202,202);
+          }
+          .mt_btn{
+              background-color: RGB(251,51,79);
+              width:100%;
+              height:40px;
+              text-align: center;
+              line-height:40px;
+              color:#fff;
+          }
+          
+    /* �ڶ���ҳ��  */  	
+ 
+		  .launched{
+	         width:100%;
+		     height:60px;
+		     border-bottom:1px solid RGB(234,234,234);
+		     background-color: #fff;
+		     float:right;
+		   /*   line-height: 60px; */
+		     color:RGB(23,23,23);
+		  }
+		  .launched_left_img{
+		     margin-left: 15px;
+		     float: left;
+		     width: 40px;
+		     margin-top: 7.5px;
+		  }
+		  .launched_sj{
+		     float:right;
+		     margin-right: 16px;
+			 margin-top: 12px;
+			 width: 20px;
+			 
+		  }	
+	      .zzt{
+		     float:left;
+		     height:50px;
+		     margin-top:5px;
+		     margin-left:5px;
+	    }	  
+         .launched_btn{
+            width:100%;
+            height:60px;
+            margin-top:120px;
+            border-top:1px solid white;
+         }
+         
+             /*���ĸ�ҳ��*/
+         .dialog{
+              width: 100%;
+			  height: 900px;
+			  background-color:RGB(153,153,153);
+			  z-index: 999;
+			  position: fixed;
+			  filter:alpha(opacity=50);  
+			  -moz-opacity:0.5;  
+			  -khtml-opacity: 0.5;  
+			  opacity: 0.5;
+			  display:block;
+			  margin-top:-10px;
+   
+          }
+          
+        .attempt_activate{
+               width:85%;
+               height:auto;
+               margin:auto;
+               background-color:#fff;
+               border-radius:5px;
+               z-index: 9999;
+		       position:fixed;
+		       margin-left:7%;
+		       margin-top:10%;
+		       display:block; 
+		       overflow:hidden;
+           }  
+           
+          .attempt_nickname{
+              text-align: center;
+              font-size:15px;
+              margin-top:10px;
+              color:RGB(79,79,79);
+              width:100%;
+              height:36px;
+              line-height:32px;
+              border-bottom:1px solid RGB(237,237,237);
+          }
+          
+          .attempt_conter{
+          text-indent:1em;
+             width:100%;
+             height:240px;
+             font-size:10px;
+             color:RGB(115,115,115);
+          }
+          .attempt_btn{
+            
+             width:100%;
+             height:40px;
+             color:#fff;
+             font-size:20px;
+             text-align: center;
+             line-height:40px;
+             background-color:RGB(252,52,80);
+             
+          }
+          .xuan_xian{
+             width:100%;
+             height:30px;
+             background-color:RGB(76,76,76);
+             color:
+          }
+          .xuan_xian_left{
+	        width: 20px;
+		    float: left;
+		    margin-left: 5%;
+		    border: 1px solid #fff;
+		    background-color: RGB(76,76,76);
+		    height: 20px;
+		    margin-top: 5px;		
+          }
+          .xuan_xian_right{
+              width:85%;
+              height:100%;
+              float:right;
+              margin;left:5px;
+              font-size:15px;
+              line-height:30px;
+              color:#fff;
+              letter-spacing:5px;
+              text-align: center;
+             
+          }
+          
+          
+        /*** launched.jsp �� �ѷ����ҳ��***/  
+          .top_img{
+         
+         width:100%;
+         margin:auto;
+         margin-top:50px;
+     }
+     .top_text{
+        width:100%;
+        font-size:13px;
+        color:RGB(251,44,68);
+        text-align: center;
+        margin-top:3px;
+        
+     }
+     .the_identity_authentication{
+           width:100%;
+           font-size:18px;
+           margin-top:20px;
+           color:RGB(78,78,78);
+           text-align: center;
+           font-family:"΢���ź�";
+     }
+     .look_btn{
+           
+            width:90%;
+            margin:auto;
+            margin-top:18px;
+            height:47px;
+            line-height:46px;
+            text-align: center;
+            color:RGB(128,128,128);
+            border:1px solid RGB(243,243,243);
+            border-radius:20px;
+            font-size:15px;
+     }
+     .identity_btn{
+            width:90%;
+            margin:auto;
+            margin-top:6px;
+            height:47px;
+            line-height:46px;
+            text-align: center;
+            color:RGB(128,128,128);
+            border:1px solid RGB(243,243,243);
+            border-radius:20px;
+            font-size:15px;
+     }
+     .share_firend{
+            width:90%;
+            margin:auto;
+            margin-top:6em;
+            height:47px;
+     
+     }
+     .share_firend_left{
+          width:35%;
+          height:50%;
+          float:left;
+          border-bottom:1px solid RGB(243,243,243);
+     }
+     .share_firend_conter{
+          width:30%;
+          height:50%;
+          float:left;
+          margin-top:4%;
+          text-align: center;
+          font-size:15px;
+          color:RGB(193,193,193);
+     }
+     .share_firend_right{
+          width:33%;
+          height:50%;
+          float:left;
+          border-bottom:1px solid RGB(243,243,243);
+        
+     }
+     .bom_img{
+        width:100%;
+        margin-top:10px;
+        margin-bottom:40px;
+     }
+        
+    /* ��identity.jsp �������֤  �� */
+    .status_top1{
+         width:100%;
+         height:50px;
+         border:1px solid RGB(250,251,252);
+     }
+     .status_top_left1{
+         font-size:13px;
+         line-height:50px;
+         color:RGB(49,49,49);
+         margin-left:5%;
+         font-size:18px;
+     }
+     .statusl_top_right1{
+    
+         float:right;
+         width:100px;
+         margin-top:-36px;
+         margin-right:5%;
+     }
+     .personage{
+         width:100%;
+         height:60px;
+         border-bottom:1px solid RGB(250,251,252);
+     }
+     .personage_left{
+         float:left;  
+         height:100%;
+         margin-left:5%;
+     }
+     .personage_left_shang{
+         height:40%;
+         font-size:15px;
+         color:RGB(66,66,66);
+         margin-top:5%;
+     }
+     .personage_left_xia{
+         height:40%;
+         font-size:12px;
+         color:RGB(188,188,188);
+         margin-top:2%;
+         
+     }
+     .personage_right{
+	     float:right;
+	     margin-right: 16px;
+		 margin-top: 9px;
+		 width:25px;
+		    
+  }
+  
+     .company{
+         width:100%;
+         height:60px;
+         border-bottom:1px solid RGB(250,251,252);
+     }
+     .company_left{
+         float:left;  
+         height:100%;
+         margin-left:5%;
+     }
+     .company_left_shang{
+         height:40%;
+         font-size:15px;
+         color:RGB(66,66,66);
+         margin-top:5%;
+     }
+     .company_left_xia{
+         height:40%;
+         font-size:12px;
+         color:RGB(188,188,188);
+         margin-top:2%;
+         
+     }
+     .company_right{
+	     float:right;
+	     margin-right: 16px;
+		 margin-top: 9px;
+		 width:25px;
+		    
+  }
+  
+   /**> ������֤  ��personal_verification.jsp **/   
+       .basic_a{
+           height:50px;
+           width:100%;
+           
+           border-bottom:1px solid RGB(250,250,250);
+        }
+         .Id_card{
+           width:28%;
+           float:left;
+           height:100%;
+           text-align:center;
+           line-height:48px;
+           font-size:15px;
+           color:RGB(27,27,27);
+         
+           
+        }
+        .Id_card_id{
+          color:RGB(75,75,75);
+          font-family:"΢���ź�";
+        }
+           .input_shuru{
+           width:71%;
+           float:right;
+           height:100%;
+        }
+        .input_jihuo{
+           height:96%;
+    	   width:100%;
+    	   font-size:15px;
+           outline:medium;
+           border:0;
+           color:red;
+      }
+      .basic_b{
+           height:50px;
+           width:100%;
+           border-bottom:1px solid RGB(250,250,250);
+      }
+      .basic_c{
+           height:50px;
+           width:100%;
+           border-bottom:1px solid RGB(250,250,250);
+      }
+      .handheld1{
+          width:100%;
+          height:auto;
+          border-bottom:1px solid RGB(249,249,251);
+      }
+      .handheld1_text{
+           font-size:16px;
+           color:RGB(57,57,57);
+           text-indent:0.82em;
+           margin-top:8px;
+      }
+      .handheld1_img{
+           width:100%;
+           margin-top:11px;
+      }
+      .handheld1_wenzi{
+           color:RGB(213,213,213);
+           font-size:10px;
+           text-indent: 0.82em;
+           margin-top:11px;
+           margin-bottom:11px;
+           
+      }
+      .handheld1_line{
+          width:100%;
+          height:180px;
+          border-bottom:1px solid RGB(249,249,251);
+      }
+      .handheld1_btn{
+          width:130px;
+          height:50px;
+          line-height:50px;
+          text-align: center;
+          margin:auto;
+          border-radius:15px;
+          margin-top:17px;
+          position:initial;
+          background-color: RGB(180,32,32);
+          color:#fff;
+          font-size:17px;
+          margin-bottom:5px;
+      } 
+      
+      /* >> legal.jsp ����ҵ��֤>> */
+      
+         .entity1{
+         width:100%;
+         height:auto;
+         border-bottom:1px solid RGB(249,249,251);
+    }
+    .entity_faren{
+          font-size:16px;
+          color:RGB(57,57,57);
+          text-indent:0.82em;
+          margin-top:8px;
+    }
+    .entity1_wenzi{
+          color:RGB(213,213,213);
+          font-size:10px;
+          text-indent: 0.82em;
+          margin-top:11px;
+          margin-bottom:11px;
+    }
+    
+    /* ...fbprpduct.jsp .. ������Ʒ��ҳ��. */
+    
+      .presell_top{
+         width:100%;
+         height:30px;
+         background-color: RGB(245,246,250);
+         border:1px solid RGB(245,246,250);
+     }
+     .presell_top_left{
+         font-size:13px;
+         line-height:30px;
+         color:RGB(168,168,168);
+         margin-left:5%;
+     }
+     .presell_top_right{
+    
+         float:right;
+         width:100px;
+         margin-top:-25px;
+         margin-right:5%;
+     }
+      .spell_money{
+           height:50px;
+           width:100%;
+           
+           border-bottom:1px solid RGB(233,233,233);
+        }
+         .spell_money_card{
+           width:28%;
+           float:left;
+           height:100%;
+           text-align:center;
+           line-height:48px;
+           font-size:15px;
+           color:RGB(27,27,27);
+         
+           
+        }
+        .spell_money_id{
+          color:RGB(75,75,75);
+          font-family:"΢���ź�";
+        }
+         .spell_money_input_shuru{
+           width:50%;
+           float:left;
+           height:100%;
+        }
+        .spell_money_input_jihuo{
+           height:96%;
+    	   width:100%;
+    	   font-size:15px;
+           outline:medium;
+           border:0;
+           color:red;
+           text-indent: 4px;
+        }
+      .spell_money_yuan{
+           width:21%;
+           float:right;
+           line-height:48px;
+           text-align:center;
+           font-size:15px;
+        }
+       .fill_what{
+           margin-top:10px;
+           width:100%;
+           background-color: #fff;
+           border:1px solid RGB(233,233,233);
+           height:100px;
+
+       }       
+       .fill_what_input{
+           height:96%;
+    	   width:99%;
+    	   font-size:15px;
+           outline:medium;
+           border:0;
+           color:red;           
+           float:left;
+       }
+      .uploading_img{
+          width:100%;
+          height:auto;
+          background-color:#fff;
+          border-bottom:1px solid RGB(233,233,233);
+      }
+      .uploading_wenzi{
+         font-size:10px;
+         margin-top:15px;
+         margin-bottom:15px;
+         text-indent: 1.9em;
+      }
+      
+      .plus_sign{
+         width:100%;
+         background-color: #fff;
+         height:47px;
+         border:1px solid solid RGB(233,233,233);
+         margin-top:17px;
+      }
+      .plus_sign_left{
+         width:37%;
+         height:100%;
+         float:left;
+         text-align: right;
+         line-height:47px;
+         font-size:25px;
+         color:RGB(186,53,72);
+          
+      }
+      .plus_sign_right{
+         width:63%;
+         height:100%;
+         float:right;
+         text-align:left;
+         line-height:48px;
+           font-size:16px;
+         color:RGB(186,53,72);
+         
+      }
+      .publish_project{
+         width:90%;
+         height:38px;
+         margin:auto;
+         border-radius:5px;
+         background-color: RGB(186,53,72);
+         color:#fff;
+         line-height:38px;
+         text-align: center;
+         margin-top: 1rem;
+         
+      }
+      .fb_btn{
+         width:100%;
+         height:auto;
+         float:left;
+         background-color: RGB(247,249,244);
+      }
+      
+      .statement1{
+         width:100%;
+         height:2rem;
+         text-align: center;
+         margin-top:10px;
+         margin-bottom:15px;
+      }
+      
+      .stop_date{
+         width:100%;
+         height:85px;
+         border-bottom:1px solid RGB(233,233,233);
+        
+      }
+      .stop_wenzi{
+         width:100%;
+         height:35px;
+      }
+      .stop_wenzi_left{
+          width:28%;
+          float:left;
+          height:100%;
+          text-align:center;
+          line-height:35px;
+          font-size:15px;
+          color:RGB(27,27,27);
+      }
+      .stop_wenzi_right{
+           float:right;
+           width: 72%;
+           line-height:34px;
+      }
+      .gun_tiao{
+          width:100%;
+          height:60px;
+          margin-top:10px;
+      }
+      .gun_tiao_left{
+         width:12%;
+         float:left;
+         color:RGB(216,216,219);
+         line-height:10px;
+         text-indent: 0.8em;
+         font-size:12px;
+         font-size: 13px;
+		 margin-top: 7px;
+		 margin-left: 14px;
+      }
+      .gun_tiao_right{
+         width:12%;
+         float:right;
+         margin-top:-1.5em;
+         color:RGB(216,216,219);
+         font-size:13px;
+        
+         margin-right:0.8em;
+      }
+      
+      .spell_conter_tiao{
+	     float:left;
+	     width:100%;
+	     height:5px;
+	     background-color: RGB(248,250,245);
+	     border:1px solid RGB(243,243,244);
+    
+ }
+            .spell_conter11{
+			   width:100%;
+			   height:60px;
+			   float:right;
+			   background-color:#fff;
+			   border-top:1px solid RGB(243,243,244);
+			}
+			.spell_conter_img{
+			  margin-left:5%;
+			  width:13%;
+			  margin-top:0.5em;
+			  float:left
+			}
+			.spell_conter_left{
+			   font-size:14px;
+			   margin-top:2px;
+			   float:left;
+			   line-height:60px;
+			   margin-left:7%;
+			   color:RGB(180,180,180);
+			}
+			.spell_conter_right{
+			   float:right;
+			   line-height:60px;
+			   margin-right:7%;
+			}
+			.spell_conter_right_img{
+			     width:18px;
+			     margin-top:1.35em;
+			}
+      
+      
+       /* ..������ʽ... */
+      	h1 small {
+			font-size: 51%;
+		}
+
+		/* Everything but the jumbotron gets side spacing for mobile first views */
+		.header,
+		.marketing,
+		.footer {
+		  padding-left: 15px;
+		  padding-right: 15px;
+		}
+
+		/* Custom page header */
+		.header {
+		  border-bottom: 1px solid #e5e5e5;
+		}
+
+		/* Make the masthead heading the same height as the navigation */
+		.header h3 {
+		  margin-top: 0;
+		  margin-bottom: 0;
+		  line-height: 40px;
+		  padding-bottom: 19px;
+		}
+		.htmleaf-header{
+			background: #64448f; color: #fff;
+			font-family: "Segoe UI", "Lucida Grande", Helvetica, Arial, "Microsoft YaHei", FreeSans, Arimo, "Droid Sans", "wenquanyi micro hei", "Hiragino Sans GB", "Hiragino Sans GB W3", "FontAwesome", sans-serif;
+		}
+		.htmleaf-icon{color: #fff;}
+		.htmleaf-header a{text-decoration: none;}
+		/* Custom page footer */
+		.footer {
+		  padding-top: 19px;
+		  color: #777;
+		  border-top: 1px solid #e5e5e5;
+		}
+
+		/* Customize container */
+		.container {
+			min-width: 640px;
+		}
+		@media (min-width: 768px) {
+		  .container {
+		    max-width: 1000px;
+		  }
+		}
+		.container-narrow > hr {
+		  margin: 30px 0;
+		}
+
+		/* Main marketing message and sign up button */
+		.title {
+		  text-align: center;
+		  border-bottom: 1px solid #e5e5e5;
+		}
+
+		/* Responsive: Portrait tablets and up */
+		@media screen and (min-width: 768px) {
+		  /* Remove the padding we set earlier */
+		  .header,
+		  .footer {
+		    padding-left: 0;
+		    padding-right: 0;
+		  }
+		  /* Space out the masthead */
+		  .header {
+		    margin-bottom: 30px;
+		  }
+		  /* Remove the bottom border on the jumbotron for visual effect */
+		  .title {
+		    border-bottom: 0;
+		  }
+		}
+
+		
+		.slider-example {
+			  width:60%;
+			  margin-left:19%;
+		}
+
+		#destroyEx5Slider, #ex6CurrentSliderValLabel, #ex7-enabled {
+			margin-left: 45px;
+		}
+
+		#ex6SliderVal {
+			color: green;
+		}
+		
+		
+		
+	/* ..  promulgate.jsp  ���ƴ�Ų�Ʒ.. */	
+	  .issued_money{
+           height:50px;
+           width:100%;
+           
+           border-bottom:1px solid RGB(233,233,233);
+        }
+         .issued_money_card{
+           width:28%;
+           float:left;
+           height:100%;
+           text-align:center;
+           line-height:48px;
+           font-size:15px;
+           color:RGB(27,27,27);
+         
+           
+        }
+        .issued_money_id{
+          color:RGB(75,75,75);
+          font-family:"΢���ź�";
+        }
+         .issued_money_input_shuru{
+           width:50%;
+           float:left;
+           height:100%;
+        }
+        .issued_money_input_jihuo{
+           height:96%;
+    	   width:100%;
+    	   font-size:15px;
+           outline:medium;
+           border:0;
+           color:red;
+           text-indent: 4px;
+        }
+      .issued_money_yuan{
+           width:21%;
+           float:right;
+           line-height:48px;
+           text-align:center;
+           font-size:15px;
+        }
+         .issued_what{
+           width:100%;
+           background-color: #fff;
+           border:1px solid RGB(233,233,233);
+           height:80px;
+           border-top:0px;
+
+       }       
+       .issued_what_input{
+           height:96%;
+    	   width:99%;
+    	   font-size:15px;
+           outline:medium;
+           border:0;
+           color:red;           
+           float:left;
+           resize: none;
+           padding-left:0.8em;
+  
+       }
+       .issued_btn{
+           width:92%;
+           height:47px;
+           margin:auto;
+           margin-top:1em;
+           background-color: RGB(176,64,63);
+           border-radius:8px;
+           text-align: center;
+           line-height:47px;
+           color:#fff;
+       }
+       
+       
+   /***>> myshopper.jsp   �ҵĹ���(ҳ���л�)   >>>***/
+   
+    .delivery{
+				width: 100%;
+				height: 4rem;
+				background: #fff;
+			}
+			.delivery_zt{
+				width: 100%;
+				height: 4rem;
+				border-bottom: 2px solid #ccc;
+			}
+			.delivery_zt_pu{
+				width: 50%;
+				float: left;
+	         	height: 2.75rem; 
+				padding-top: 1.25rem;
+				color: rgb(102,102,102);
+			
+			}
+			.delivery_zt_pu3{
+				width: 33.3333%;
+				float: left;
+	         	height: 2.75rem; 
+				padding-top: 1.25rem;
+				color: rgb(102,102,102);
+			
+			}
+			.delivery_zt_pu1{
+				width: 100%;
+				height: 1.5rem;
+				text-align: center;
+				line-height: 1.5rem;
+			}
+            .delivery_click{
+				border-bottom: 2px solid rgb(240,0,13);
+				color: rgb(240,0,13) !important;
+			}
+			
+			.delivery_top{
+			    width:100%;
+			    width:100%;
+			    height:40px;
+			    margin-top:7px;
+			    background-color: #fff;
+			    border-bottom:1px solid RGB(233,233,233);
+			}
+			.delivery_top_1{
+	
+			    color:RGB(113,113,113);
+			    line-height:40px;
+			    text-indent:3px;
+			    float:left;
+			    margin-left:5%;
+			    
+			}
+			.delivery_ling1{
+			   font-size:17px;
+			}
+			
+			.delivery_ling2{
+			   margin-left:10%;
+			   font-size:15px;
+			}
+			
+           .delivery_ling3{
+			   float:right;
+			   margin-right:5%;
+			   font-size:13px;
+			   color:RGB(183,68,74);
+			}
+			.delivery_zhuti{
+			   width:100%;
+			   border-top:1px solid RGB(233,233,233);
+			   background-color: #fff;
+			   float:right;
+			   height:auto;
+			}
+			.delivery_conter{
+			   width:95%;
+			   height:60px;
+			   float:right;
+			}
+			.delivery_bating{
+			  border-top:1px solid RGB(233,233,233);
+			}
+			.delivery_conter_img{
+			  width:15%;
+			  margin-top:0.5em;
+			  float:left
+			}
+			.delivery_conter_left{
+			   font-size:14px;
+			   margin-top:2px;
+			   float:left;
+			   line-height:60px;
+			   margin-left:5%;
+			   color:RGB(180,180,180);
+			}
+			.delivery_conter_right{
+			   font-size:14px; 
+			   float:right;
+			   line-height:60px;
+			   margin-right:7%;
+			   color:RGB(180,180,180);
+			}
+			.delivery_amount{
+			    margin-top:5px;
+			    margin-bottom:10px;
+			    float:right;
+	   
+			}
+			.delivery_amount_text1{
+			   text-align: right;
+			   margin-right:4%;
+			   float:right;
+			}
+			.delivery_amount_text2{
+			   text-align: right;
+			   margin-right:4%;
+			   float:right;
+			   color:RGB(155,155,155);
+			   font-size:15px;
+			}
+			.delivery_btn{
+			    width:100%;
+			    height:70px;
+			    border-top:2px solid RGB(233,233,233);
+			    background-color: #fff;
+			    float:left;
+			    margin-bottom:
+			}
+			.delivery_btn_niu{
+			    width:90px;
+			    height:38px;
+			    border-radius:10px;
+			    background-color: RGB(182,28,28);
+			    color:#fff;
+			    line-height:38px;
+			    text-align: center;
+			    margin-top:22px;
+			    margin-top;
+			    float:right;
+			    margin-right:3%;
+			}
+			
+			 /* ģ̬�����ʽ  */  	
+	        .delivery_kuang{
+              width: 100%;
+			  height: 900px;
+			  background-color:RGB(197,197,197);
+			  z-index: 999;
+			  position: fixed;
+			  filter:alpha(opacity=50);  
+			  -moz-opacity:0.5;  
+			  -khtml-opacity: 0.5;  
+			  opacity: 0.5;
+			  display:none; 
+			  margin-top:-10px;
+   
+          }
+          
+        .delivery_activate{
+               width:85%;
+               height:auto;
+               margin:auto;
+               background-color:RGB(250,250,250);
+               border-radius:5px;
+               z-index: 9999;
+		       position:fixed;
+		       margin-left:7%;
+		       margin-top:30%;
+		        display:none; 
+		       overflow:hidden;
+           }
+           .delivery_prompt{
+              width:100%;
+              height:40px;
+              text-align: center;
+              line-height:40px;
+              color:RGB(202,73,78);
+              border-bottom:1px solid RGB(160,160,160);
+           }
+           .delivery_prompt_text{
+              width:98%;
+              margin:auto;
+              text-align: left;
+              text-indent: 1em;
+              font-size:16px;
+              color:RGB(29,29,29);
+           }
+           .delivery_prompt_btn{
+               
+                width:80px;
+                margin:auto;
+                height:40px;
+                color:#fff;
+                background-color: RGB(191,14,24);
+                margin-top:80px;
+                margin-bottom:10px;
+                border-radius:8px;
+                line-height:40px;
+                 text-align:center;         
+           }    
+           
+       /* .....  refund.jsp �˻�����....... */
+       
+      .return_reason{
+        width:100%;
+        height:70px;
+        line-height:70px;
+        text-indent: 0.5em;
+        font-size:20px;
+        color:RGB(68,68,68);
+ 
+    }
+     .reason_what{
+           width:92%;
+           margin:auto;
+           background-color: #fff;
+           border:2px solid RGB(233,233,233);
+           height:280px;
+
+       }       
+       .reason_what_input{
+           
+    	   width:100%;
+    	   font-size:14px;
+           outline:medium;
+           border:0;
+           color:red;           
+           float:left;
+           resize: none;
+           line-height:2.5em;
+  
+       }
+       .reason_btn1{
+          width:88%;
+          margin:auto;
+          height:50px;
+          margin-top:30px;
+          background-color: RGB(181,9,9);
+          color:#fff;
+          text-align: center;
+          line-height:50px;
+          font-size:17px;
+          border-radius:8px;
+       }
+       
+        .reason_btn2{
+          width:88%;
+          margin:auto;
+          height:50px;
+          margin-top:20px;
+          background-color:RGB(209,209,209);
+          color:#fff; 
+          text-align: center;
+          line-height:50px;
+          font-size:17px;
+          border-radius:8px;
+          position: initial;
+          margin-bottom:50px;
+  
+       }    
+           
+    /** information.jsp  ��Ϣ��ҳ**/     
+    
+      .news_top{
+         width: 94%;
+	 	 padding: 0 3%;
+	     float: left;
+   		 margin-top: 0.5rem;
+  
+     }
+     .news_img{
+         width:15%;
+         float:left;
+     }
+     .news_wemzi{
+         width:83%;
+         float:right;
+     }
+     .news_wemzi_shang{
+        font-size:15px;
+     }
+     .news_wemzi_xia{
+         font-size:10px;       
+     }
+ 
+     .news_conter{
+        width:80%;
+        float:right;
+        font-size:14px;
+        margin-top:15px;
+        color:RGB(234,69,71);
+        margin-right:1%;
+     }
+     .news_xian{
+       float:left;
+        width:92%;
+        margin-left:3.5%;
+        height:5px;
+        margin-top:15px;
+        border-bottom:2px solid RGB(243,243,243);
+     
+     }  
+     
+          /* �������� */
+     /* >>��Ŀ�����css>>> */
+    /*  ���� help_initiate_index.jsp ������_������Ŀ����ҳ ���� */
+    
+     .project_related_issues{
+         width:100%;
+         height:50px;
+         border-bottom:1px solid RGB(239,239,239);
+         color:RGB(5,5,5);
+         line-height:50px;
+         text-indent: 1em;
+         font-size:20px;
+         font-family:"΢���ź�";
+         
+      }
+      /* ������*/
+      .project_public{
+         width:100%;
+         height:50px;
+         border-bottom:1px solid RGB(239,239,239);
+         line-height:50px;
+         text-indent: 1em;
+      }
+      .project_related_norm_img{
+          width:20px;
+	     float:right;
+	     margin-top: 7px;
+	     margin-right: 15px;
+      }
+      
+    /*  ���� help_initiate_specification.jsp��������Ŀ�кι淶�� ���� */   
+    
+        .specification_by_project{
+         width:96%;
+         margin:auto;
+         height:50px;
+         border-bottom:1px solid RGB(239,239,239);
+         color:RGB(5,5,5);
+         line-height:50px;
+         font-size:20px;
+         font-family:"΢���ź�";
+        }
+        .specification_status{
+         width:94%;
+         margin:auto;
+         height:50px;
+         color:RGB(5,5,5);
+         line-height:50px;
+         font-size:17px;
+         font-family:"΢���ź�";
+        }
+        .specification_status_text{
+           font-size:15px;
+           width:93%;
+           margin:auto;
+
+          
+        }
+        .specification_third{
+	         width:94%;
+	         margin:auto;
+	         height:80px;
+	         color:RGB(5,5,5);
+	         font-size:17px;
+	         font-family:"΢���ź�";
+        }
+      
+     /*  ���� help_initiate_save.jsp��ƴ�ųɹ���Ǯ�������� ���� */  
+     
+      .money_there_save{
+         width:94%;
+         margin:auto;
+         height:50px;
+         border-bottom:1px solid RGB(239,239,239);
+         color:RGB(5,5,5);
+         line-height:50px;
+         font-size:20px;
+         font-family:"΢���ź�";
+   }
+   .money_there_text{
+         width:94%;
+         margin:auto;
+         height:50px;
+         color:RGB(5,5,5);
+         line-height:50px;
+         font-size:14px;
+         font-family:"΢���ź�";
+   }  
+   
+    /*  ���� help_initiate_Successfailure.jsp��ʲô����Ŀ�ɹ�����Ŀʧ�� ���� */  
+    .successfailure_there_save{
+         width:94%;
+         margin:auto;
+         height:50px;
+         border-bottom:1px solid RGB(239,239,239);
+         color:RGB(5,5,5);
+         line-height:50px;
+         font-size:20px;
+         font-family:"΢���ź�";
+   }
+   .successfailure_there_text{
+         width:94%;
+         margin:auto;
+         height:50px;
+         color:RGB(5,5,5);
+         font-size:14px;
+         font-family:"΢���ź�";
+         margin-top:10px;
+   }
+    
+     /*  ���� help_initiate_charge.jsp����Ŀ�ɹ��󣬻���ȡ�����𣿡��� */  
+     
+      .Chargefee_there_save{
+         width:94%;
+         margin:auto;
+         height:50px;
+         border-bottom:1px solid RGB(239,239,239);
+         color:RGB(5,5,5);
+         line-height:50px;
+         font-size:20px;
+         font-family:"΢���ź�";
+   }
+   .Chargefee_there_text{
+         width:94%;
+         margin:auto;
+         height:50px;
+         color:RGB(5,5,5);
+         font-size:14px;
+         font-family:"΢���ź�";
+         margin-top:10px;
+   }
+      /*  ����help_initiate_editor.jsp����Ŀ�������Ƿ����޸ı༭�� ���� */ 
+      
+       .editor_there_save{
+         width:94%;
+         margin:auto;
+         height:50px;
+         border-bottom:1px solid RGB(239,239,239);
+         color:RGB(5,5,5);
+         line-height:50px;
+         font-size:20px;
+         font-family:"΢���ź�";
+   }
+   .editor_there_text{
+         width:94%;
+         margin:auto;
+         height:50px;
+         color:RGB(5,5,5);
+         font-size:14px;
+         font-family:"΢���ź�";
+         margin-top:10px;
+   }
+       
+       /*  ����help_initiate_account.jsp��ƴ�ųɹ����ÿ��Ե��� ���� */  
+       
+        .account_there_save{
+         width:94%;
+         margin:auto;
+         height:50px;
+         border-bottom:1px solid RGB(239,239,239);
+         color:RGB(5,5,5);
+         line-height:50px;
+         font-size:20px;
+         font-family:"΢���ź�";
+     }
+     .account_there_text{
+         width:94%;
+         margin:auto;
+         height:50px;
+         color:RGB(5,5,5);
+         font-size:14px;
+         font-family:"΢���ź�";
+         margin-top:10px;
+     }
+               /*   ����֧����Ŀ������⡷�� */
+      /*  ����support_initiate.jsp������_֧����Ŀ������⡷�� */  
+      
+      
+       .supported_project_there_save{
+         width:94%;
+         margin:auto;
+         height:50px;
+         border-bottom:1px solid RGB(239,239,239);
+         color:RGB(5,5,5);
+         line-height:50px;
+         font-size:20px;
+         font-family:"΢���ź�";
+     }
+     .supported_project_there_text{
+         width:94%;
+         margin:auto;
+         height:50px;
+         color:RGB(5,5,5);
+         font-size:14px;
+         font-family:"΢���ź�";
+         margin-top:10px;
+     }
+     
+   /* />> presell_initiate.jsp  ����_����Ԥ���������>>>> */  
+   
+      .advance_sale_project{
+         width:96%;
+         margin:auto;
+         height:50px;
+         border-bottom:1px solid RGB(239,239,239);
+         color:RGB(5,5,5);
+         line-height:50px;
+         font-size:20px;
+         font-family:"΢���ź�";
+        }
+        .advance_sale_status{
+         width:94%;
+         margin:auto;
+         height:50px;
+         color:RGB(5,5,5);
+         line-height:50px;
+         font-size:17px;
+         font-family:"΢���ź�";
+        }
+        .advance_sales_text{
+           font-size:14px;
+           width:93%;
+           margin:auto;
+           color:RGB(166,166,166);
+           line-height:1.8em;
+ 
+        }
+        .text_recommended{
+            margin-top:13px;
+        }
+        
+    /*  >>>  management_initiate.jsp �� ����_��Ŀ����������� >>> */   
+    
+      .gestion_sale_project{
+         width:96%;
+         margin:auto;
+         height:50px;
+         border-bottom:1px solid RGB(239,239,239);
+         color:RGB(5,5,5);
+         line-height:50px;
+         font-size:20px;
+         font-family:"΢���ź�";
+        }
+        .gestion_sale_status{
+         width:94%;
+         margin:auto;
+         height:50px;
+         color:RGB(5,5,5);
+         line-height:50px;
+         font-size:17px;
+         font-family:"΢���ź�";
+        }
+        .gestion_sales_text{
+           font-size:16px;
+           width:93%;
+           margin:auto;
+           color:RGB(123,123,123);
+ 
+        }
+        
+   /* >>>>projectmanage_amend_time.jsp  �޸�ʱ��>>>>>> */
+	      .Modify_time_top{
+	       height:10px;
+	       width:100%;
+	     }
+	    .Modify_time_btn1{
+	       width:88%;
+	       margin:auto;
+	       height:50px;
+	       margin-top:70px;
+	       background-color: RGB(181,9,9);
+	       color:#fff;
+	       text-align: center;
+	       line-height:50px;
+	       font-size:17px;
+	       border-radius:8px;
+	    
+	    }
+	    .Modify_time_btn2{
+	       width:88%;
+	       margin:auto;
+	       height:50px;
+	       margin-top:30px;
+	       background-color:RGB(209,209,209);
+	       color:#fff;
+	       text-align: center;
+	       line-height:50px;
+	       font-size:17px;
+	       border-radius:8px;
+	    }   
+	   
+	 /*   projectmanage_amend_money.jsp �� �޸Ľ�� */
+	     
+	     .Modify_the_amount_top{
+         height:5px;
+         width:100%;
+         background-color: RGB(253,253,253);
+      }
+      .Modify_the_amount_btn1{
+       width:88%;
+       margin:auto;
+       height:50px;
+       margin-top:70px;
+       background-color: RGB(181,9,9);
+       color:#fff;
+       text-align: center;
+       line-height:50px;
+       font-size:17px;
+       border-radius:8px;
+    
+    }
+    .Modify_the_amount_btn2{
+       width:88%;
+       margin:auto;
+       height:50px;
+       margin-top:30px;
+       background-color:RGB(209,209,209);
+       color:#fff;
+       text-align: center;
+       line-height:50px;
+       font-size:17px;
+       border-radius:8px;
+    }
+    
+    
+      .Modify_the_amount_money{
+           height:50px;
+           width:100%;
+           
+           border:1px solid RGB(233,233,233);
+        }
+         .Modify_the_amount_card{
+           width:28%;
+           float:left;
+           height:100%;
+           text-align:center;
+           line-height:48px;
+           font-size:15px;
+           color:RGB(27,27,27);
+         
+           
+        }
+        .Modify_the_amount_id{
+          color:RGB(75,75,75);
+          font-family:"΢���ź�";
+        }
+         .Modify_the_amount_input_shuru{
+           width:50%;
+           float:left;
+           height:100%;
+        }
+        .Modify_the_amount_input_jihuo{
+           height:96%;
+    	   width:100%;
+    	   font-size:15px;
+           outline:medium;
+           border:0;
+           color:red;
+           text-indent: 4px;
+           margin-top:2px;
+       
+        }
+      .Modify_the_amount_yuan{
+           width:21%;
+           float:right;
+           line-height:48px;
+           text-align:center;
+           font-size:15px;
+        }
+      
+     /* >>>>project_add_account.jsp  ��������˻�>>>>>> */ 
+      .Add_cash{
+      width:100%;
+      height:80px;
+
+    }
+    .Add_cash_img{
+       width:23px;
+       float:left;
+       margin-left:6%;
+       margin-top:2.5em;
+    }
+    .Add_cash_text{
+       float:left;
+       margin-left:6%;
+       margin-top:2.4em;
+    }
+    .Add_cash_input{
+       float:right;
+       margin-top:2.52em;
+       margin-right:6%;
+       width:140px;
+       height:23px;
+       border:1px solid;
+       outline:medium;
+       
+    }
+    .Add_cash_kaihu{
+       width:100%;
+       height:37px;
+       float:left;
+       widfth:12%;
+       border-top:1px solid RGB(233,232,234);
+      
+    }
+    .Add_cash_kaihu_left{
+       float:left;
+       font-size:15px;
+       margin-top:6.4px;
+       margin-left:6%;
+       color:RGB(75,75,75);
+       line-height:37px;
+       
+    }
+    .help_jihuo{
+                float:right;
+        		width:73%;
+        		height:37px;
+        		margin:auto;
+        		margin-bottom:15px;
+        		color:RGB(201,200,205);
+        		font-size:15px;
+        		background-color:#fff;
+        		line-height:49px;
+        		
+        		
+        	}
+        	.xl_xlkuan{
+        	    display:block;
+        	    float:left;
+	        	height:37px;
+	        	width:80%;
+	            border: none;
+	            outline: none;
+	            /*��Ĭ�ϵ�selectѡ�����ʽ���*/
+	            appearance:none;
+	            -moz-appearance:none;
+	            -webkit-appearance:none;
+	            -ms-appearance:none;
+        	    color:RGB(48,48,48);
+        	    font-size:15px;
+        	    text-indent: 1em;
+        	    background-color:#fff;
+        	}
+         	.Add_cash_kaihu_img{ 
+        	  float:left;
+        	  margin-left:-10%;
+        	  height:37px;
+        	  
+        	}
+        	
+         .Add_cash_a{
+           height:50px;
+           width:100%;
+           border-top:1px solid RGB(233,233,233);
+           float:left;
+        }
+         .Add_cash_card{
+           width:28%;
+           float:left;
+           height:100%;
+           text-align:center;
+           line-height:48px;
+           font-size:15px;
+           color:RGB(27,27,27);
+           padding-left:5px;
+         
+           
+        }
+        .Add_cash_id{
+          color:RGB(75,75,75);
+          font-family:"΢���ź�";
+        }
+           .Add_cash_input_shuru{
+           width:71%;
+           float:right;
+           height:100%;
+        }
+        .Add_cash_input_jihuo{
+           height:96%;
+    	   width:100%;
+    	   font-size:15px;
+           outline:medium;
+           border:0;
+           color:red;
+      }
+      .Add_cash_line{
+          width:100%;
+          height:8px;
+          float:left;
+          background-color: RGB(245,246,251);
+      }
+       .Add_cash_btn1{
+            float:left;
+	       width:88%;
+	      margin-left:6%;
+	       height:50px;
+	       margin-top:70px;
+	       background-color: RGB(238,48,48);
+	       color:#fff;
+	       text-align: center;
+	       line-height:50px;
+	       font-size:17px;
+	       border-radius:8px;
+	    
+	    }
+	    .Add_cash_btn2{
+	       float:left;
+	       width:88%;
+	       margin-left:6%;
+	       height:50px;
+	       margin-top:30px;
+	       margin-bottom:30px;
+	       background-color:RGB(107,184,102);
+	       color:#fff;
+	       text-align: center;
+	       line-height:50px;
+	       font-size:17px;
+	       border-radius:8px;
+	       
+	    }
+      
+       

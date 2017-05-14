@@ -1,0 +1,145 @@
+/* wt  ¶©µ¥ÏêÇéµÄcss*/
+@CHARSET "UTF-8";
+        body{
+            margin:0;
+            padding:0;
+        }
+        .zong{
+           width:100%;
+           height:auto;
+        }
+        .top{
+           height:58px;
+           border: 1px solid red;
+        }
+        .ding_dan_top{
+             width:185px;
+             height:40px;
+             margin-top:10px;
+             margin-left:10px;
+        }
+        .ding_dan_top_left{
+             float:left;
+             wdith:35px;
+             
+           
+        }
+        .ding_dan_top_zhong{
+              float:left;
+              height:100%;
+              width:90px;
+              text-align:center;
+              font-size:20px;
+              line-height:2em;
+              color:RGB(35,82,124);
+              
+        }
+        .ding_dan_top_right{
+            border:1px solid RGB(204,204,204);
+            float:right;
+            height:90%;
+            width:55px;
+            text-align:center;
+            font-size:17px;
+            border-radius:5px;
+            line-height:2.4em;
+            
+        }
+        .fan_hui{
+            color:black;
+            
+        }
+        table{
+             width:100%;
+             border:1px solid RGB(221,221,221);
+        }
+        .biao_tou{
+            background-color: RGB(245,245,245);
+            border-left:1px solid RGB(221,221,221);
+            font-size:15px;
+            text-indent: 1em;
+            width:100%;
+            height:30px;
+        }
+        .shangpin_img{
+          text-align: center;
+          wdith:30%;
+
+        }
+        .shangpin_dan_hao{
+          height:50px;
+          border-left:1px solid RGB(221,221,221); 
+          line-height:3em;
+          text-indent: 1em;
+        }
+        .zhifu_fangzhi{
+           height:50px;
+            border:1px solid RGB(221,221,221);
+            text-indent: 1em;
+        }
+        .disan_fang{
+          height:50px; 
+          border-left:1px solid RGB(221,221,221);
+          line-height:3em;
+          text-indent: 1em;
+        }
+        .tr_xiatong{
+            border:1px solid RGB(221,221,221);
+             height:28px;
+        }
+        .left_lie{
+          text-indent:1em;
+          width:33% !important;
+        }
+        .right_lie{
+          width: 66% !important;
+        }
+        .nei_table{
+          width: 100% !important;
+          border: none;
+        }
+        .right_1{
+         width:50% !important;
+         text-indent:1em;
+         border-left: 1px solid  RGB(221,221,221);
+        }
+        .right_2{
+         width:50% !important;
+         text-indent:1em;
+         border-left:1px solid RGB(221,221,221);
+        }
+        .tr_beizhu{
+            border:1px solid RGB(221,221,221);height:28px;
+        }
+        .bei_zhu{
+          text-indent:1em;
+        }
+        .shangjia_beizhu{
+          line-height:2em;
+          text-indent:1em;
+        }
+        .table_2{
+           border:1px solid RGB(188,232,241);
+           height:auto;width:100%;
+           margin-top:15px;
+        }
+        .shou-huoren{
+          background-color:RGB(217,237,247);
+          color:RGB(49,112,143);
+          height:30px;font-size:15px;
+          text-indent:1em;
+        }
+        .person_shouji{
+          height:28px;
+          text-indent:1em;
+        }
+        .phone{
+          border:1px solid RGB(221,221,221);
+          height:28px;
+          text-indent:1em;
+        }
+        .dizhi_x{
+          height:50px;
+          text-indent:1em;
+          line-height:-2em;
+        }
