@@ -40,9 +40,6 @@ public class HomePageServiceImpl extends BaseServiceImpl implements HomePageServ
 	@Override
 	public List<Map<String, Object>> findAllPic() {
 		List<Map<String, Object>> list = homePageDao.findAllPic();
-		for(Map<String, Object> map : list) {
-			map.put("pic", Constant.PHOTO_URL + map.get("pic"));
-		}
 		return list;
 	}
 

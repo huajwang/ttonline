@@ -43,6 +43,9 @@ public class HomePageDaoImpl implements HomePageDao {
 		query.unwrap(SQLQuery.class).setResultTransformer(
 				Transformers.ALIAS_TO_ENTITY_MAP);
 		List<Map<String, Object>> dataList = query.getResultList();
+		for(Map<String, Object> map : dataList) {
+			map.put("pic", Constant.PHOTO_URL + map.get("pic"));
+		}
 		return dataList;
 	}
 
