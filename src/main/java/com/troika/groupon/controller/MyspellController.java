@@ -1,6 +1,5 @@
 package com.troika.groupon.controller;
 
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -12,11 +11,8 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.aliyun.oss.common.comm.ServiceClient.Request;
-import com.google.gson.Gson;
 import com.troika.emall.model.TMallUser;
 import com.troika.emall.restapi.BaseController;
-import com.troika.emall.service.TMallUserService;
 import com.troika.emall.util.Constant;
 import com.troika.groupon.common.GrouponOrderStatus;
 import com.troika.groupon.service.GroupOrderService;
@@ -31,9 +27,6 @@ public class MyspellController extends BaseController{
 	@Autowired
 	private GroupOrderService groupOrderService;
 	
-	@Autowired
-	private TMallUserService tMallUserService;
-	
 	/**
 	 * 拼团首页
 	 * 
@@ -43,7 +36,6 @@ public class MyspellController extends BaseController{
 	public String index(HttpServletRequest request, Model model){
 		TMallUser user = (TMallUser) request.getSession().getAttribute(
 				Constant.LOGIN_USER);// 获取当前用户
-		if (user == null) return "login";
 		if(!user.getIconUrl().contains("http://wx")){
 			String arr[] = user.getIconUrl().split("/");
 			user.setIconUrl(Constant.PHOTO_URL+arr[arr.length-1]);
