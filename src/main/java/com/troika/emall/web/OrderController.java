@@ -1,7 +1,5 @@
 package com.troika.emall.web;
 
-import static org.springframework.web.bind.annotation.RequestMethod.GET;
-
 import java.io.IOException;
 import java.net.URLEncoder;
 import java.util.HashMap;
@@ -17,7 +15,6 @@ import org.dom4j.Element;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.util.concurrent.ListenableFuture;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 

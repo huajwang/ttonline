@@ -2,7 +2,6 @@ package com.troika.emall.web;
 
 import java.math.BigDecimal;
 import java.net.URLDecoder;
-import java.security.Principal;
 import java.sql.Timestamp;
 import java.util.ArrayList;
 import java.util.Date;
@@ -63,99 +62,93 @@ public class MemberController extends BaseController {
 
 	@SuppressWarnings("unchecked")
 	@RequestMapping
-	public String index(HttpServletRequest request, Model model, Principal principal) {
-		System.out.println("pricipal name = " + principal.getName());
-		TMallUser user = tMallUserService.findUserByUserName(principal.getName());// CommonUtil.ValidateUser(request);
-		if (user == null) {
-			model.addAttribute("path", "/member/");
-			return "login";
-		} else {
-			if (user.getIconUrl() != null) {
-				System.out.println("icon url = " + user.getIconUrl());
-				if(!user.getIconUrl().contains("http://wx")){
-					String arr[] = user.getIconUrl().split("/");
-					user.setIconUrl(Constant.PHOTO_URL + arr[arr.length - 1]);
-				}
+	public String index(HttpServletRequest request, Model model) {
+		TMallUser user = CommonUtil.ValidateUser(request);
+		if (user.getIconUrl() != null) {
+			System.out.println("icon url = " + user.getIconUrl());
+			if(!user.getIconUrl().contains("http://wx")){
+				String arr[] = user.getIconUrl().split("/");
+				user.setIconUrl(Constant.PHOTO_URL + arr[arr.length - 1]);
 			}
-			model.addAttribute("user", user);
-			long id = user.getId();
-			int count = 0;
-
-			if (request.getSession().getAttribute(Constant.USER_BALANCE) == null) {
-				BigDecimal total = cashService.findTotalBalance(user);
-				request.getSession().setAttribute(Constant.USER_BALANCE, total);
-			}
-			model.addAttribute("balance",
-					request.getSession().getAttribute(Constant.USER_BALANCE));
-			// 待支付
-			List<Map<String, Object>> list1 = orderProcess.WaitPayOrderList(id);
-			model.addAttribute("order1", list1.size());
-			// 待发货
-			List<Map<String, Object>> list2 = orderProcess
-					.WaitSendOrderList(id);
-			for (Map<String, Object> map : list2) {
-				List<Map<String, Object>> details = (List<Map<String, Object>>) map
-						.get("details");
-				count += details.size();
-			}
-			model.addAttribute("order2", count);
-			// 待收货
-			count = 0;
-			List<Map<String, Object>> list3 = orderProcess.WaitGetOrderList(id);
-			for (Map<String, Object> map : list3) {
-				List<Map<String, Object>> details = (List<Map<String, Object>>) map
-						.get("details");
-				count += details.size();
-			}
-			model.addAttribute("order3", count);
-			// 待评价
-			count = 0;
-			List<Map<String, Object>> list4 = orderProcess.WaitEvalList(id);
-			for (Map<String, Object> map : list4) {
-				List<Map<String, Object>> details = (List<Map<String, Object>>) map
-						.get("details");
-				count += details.size();
-			}
-			model.addAttribute("order4", count);
-
-			// 收藏
-			Long userId = user.getId();
-			List<Map<String, Object>> list = favouriteService
-					.findFavouritesByUserId(user.getId());
-			model.addAttribute("goodsize", list.size());
-
-			// 退换货
-			int returnNum = 0;
-			List<Map<String, Object>> list5 = orderProcess.getAllOrderList(id);
-			for (int i = 0; i < list5.size(); i++) {
-				List<Map<String, Object>> details = (List<Map<String, Object>>) list5
-						.get(i).get("details");
-				for (int e = 0; e < details.size(); e++) {
-					String detalStatus = (String) details.get(e).get(
-							"detailStatus");
-					if (detalStatus.equals(OrderDetailStatus.RETURN_REQUEST
-							.getCode())
-							|| detalStatus
-							.equals(OrderDetailStatus.RETURN_IN_PROGRESS
-									.getCode())
-							|| detalStatus
-							.equals(OrderDetailStatus.CASHBACK_APPROVED
-									.getCode()))
-						returnNum++;
-				}
-			}
-			model.addAttribute("order5", returnNum);
-			// 显示购物车商品数量
-			// 判断用户是否登录
-			if (user != null) {
-				List<Map<String, Object>> list11 = cartService
-						.getCartListByUserId(user.getId());
-				model.addAttribute("cartsize", list11.size());
-				model.addAttribute("carts", list11);
-			}
-
-			return "member/index";
 		}
+		model.addAttribute("user", user);
+		long id = user.getId();
+		int count = 0;
+
+		if (request.getSession().getAttribute(Constant.USER_BALANCE) == null) {
+			BigDecimal total = cashService.findTotalBalance(user);
+			request.getSession().setAttribute(Constant.USER_BALANCE, total);
+		}
+		model.addAttribute("balance",
+				request.getSession().getAttribute(Constant.USER_BALANCE));
+		// 待支付
+		List<Map<String, Object>> list1 = orderProcess.WaitPayOrderList(id);
+		model.addAttribute("order1", list1.size());
+		// 待发货
+		List<Map<String, Object>> list2 = orderProcess
+				.WaitSendOrderList(id);
+		for (Map<String, Object> map : list2) {
+			List<Map<String, Object>> details = (List<Map<String, Object>>) map
+					.get("details");
+			count += details.size();
+		}
+		model.addAttribute("order2", count);
+		// 待收货
+		count = 0;
+		List<Map<String, Object>> list3 = orderProcess.WaitGetOrderList(id);
+		for (Map<String, Object> map : list3) {
+			List<Map<String, Object>> details = (List<Map<String, Object>>) map
+					.get("details");
+			count += details.size();
+		}
+		model.addAttribute("order3", count);
+		// 待评价
+		count = 0;
+		List<Map<String, Object>> list4 = orderProcess.WaitEvalList(id);
+		for (Map<String, Object> map : list4) {
+			List<Map<String, Object>> details = (List<Map<String, Object>>) map
+					.get("details");
+			count += details.size();
+		}
+		model.addAttribute("order4", count);
+
+		// 收藏
+		Long userId = user.getId();
+		List<Map<String, Object>> list = favouriteService
+				.findFavouritesByUserId(user.getId());
+		model.addAttribute("goodsize", list.size());
+
+		// 退换货
+		int returnNum = 0;
+		List<Map<String, Object>> list5 = orderProcess.getAllOrderList(id);
+		for (int i = 0; i < list5.size(); i++) {
+			List<Map<String, Object>> details = (List<Map<String, Object>>) list5
+					.get(i).get("details");
+			for (int e = 0; e < details.size(); e++) {
+				String detalStatus = (String) details.get(e).get(
+						"detailStatus");
+				if (detalStatus.equals(OrderDetailStatus.RETURN_REQUEST
+						.getCode())
+						|| detalStatus
+						.equals(OrderDetailStatus.RETURN_IN_PROGRESS
+								.getCode())
+						|| detalStatus
+						.equals(OrderDetailStatus.CASHBACK_APPROVED
+								.getCode()))
+					returnNum++;
+			}
+		}
+		model.addAttribute("order5", returnNum);
+		// 显示购物车商品数量
+		// 判断用户是否登录
+		if (user != null) {
+			List<Map<String, Object>> list11 = cartService
+					.getCartListByUserId(user.getId());
+			model.addAttribute("cartsize", list11.size());
+			model.addAttribute("carts", list11);
+		}
+
+		return "member/index";
 	}
 
 	/**
@@ -255,8 +248,6 @@ public class MemberController extends BaseController {
 	 */
 	@RequestMapping("applyReturn")
 	public String applyReturn(HttpServletRequest request, Model model) {
-		TMallUser user = (TMallUser) request.getSession().getAttribute(
-				Constant.LOGIN_USER);
 		model.addAttribute("orderDetailId", request.getParameter("detailId"));
 		// model.addAttribute("orderId", request.getParameter("orderId"));
 		// model.addAttribute("gId", request.getParameter("gId"));
@@ -661,7 +652,7 @@ public class MemberController extends BaseController {
 				return genFailResult(map);
 			}
 		}
-		
+
 		// 先判断手机号码是否为空
 		if(!StringUtils.isNullOrEmpty(phone)){
 			TMallUser tmu3 = tMallUserService.findUserByPhone(phone);
@@ -673,7 +664,7 @@ public class MemberController extends BaseController {
 				}
 			}
 		}
-		
+
 		// 先判断电子邮件是否为空
 		if (!StringUtils.isNullOrEmpty(email)) {
 			TMallUser tmu2 = tMallUserService.findUserByEmail(email);
