@@ -353,7 +353,7 @@ public class HomeController extends BaseController {
 			// JSONObject UserInfo = wpc.getUserInfor(OpenId);
 			// Map<String, Object> map = tMallUserService.register(OpenId);
 		}
-		return "../login";
+		return "login";
 	}
 
 	/**

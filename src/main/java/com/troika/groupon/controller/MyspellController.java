@@ -43,6 +43,7 @@ public class MyspellController extends BaseController{
 	public String index(HttpServletRequest request, Model model){
 		TMallUser user = (TMallUser) request.getSession().getAttribute(
 				Constant.LOGIN_USER);// 获取当前用户
+		if (user == null) return "login";
 		if(!user.getIconUrl().contains("http://wx")){
 			String arr[] = user.getIconUrl().split("/");
 			user.setIconUrl(Constant.PHOTO_URL+arr[arr.length-1]);
