@@ -18,8 +18,7 @@
 	href="${ctx}/groupon/assets/css/css1/bootstrap-slider.css" />
 <link rel="stylesheet"
 	href="${ctx}/groupon/assets/css/css1/bootstrap-slider.min.css" />
-<!-- The below link cause loading page extemly slow ? -->
-<!-- link rel="stylesheet" href="${ctx}/groupon/assets/css/css1/default.css" / -->
+<link rel="stylesheet" href="${ctx}/groupon/assets/css/css1/default.css" />
 <link rel="stylesheet"
 	href="${ctx}/groupon/assets/css/css1/normalize.css" />
 
