@@ -26,14 +26,18 @@
 	function alipay(){
 		document.forms['alipaysubmit'].submit();
 	}
+	
+	function toGrouponMainPage(){
+		window.location.href=ctx+"/groupon";
+	}
 </script>
 </head>
 <body class="bgcolor2">
 	<!-- 头部 -->
 	<div class="mobindextop ztbgcolor fontcolor1 fontsize25">
-		<img onclick="self.location=document.referrer;" class="prodetalieimg" alt="" src="${ctx}/groupon/assets/img/index/indexprojectdetail/back.png">
+		<!-- img onclick="self.location=document.referrer;" class="prodetalieimg" alt="" src="${ctx}/groupon/assets/img/index/indexprojectdetail/back.png" -->
 		<span style="font-size: 18px;display: inline-block;">订单支付</span>
-		<span id="quren" class="pro_jb" style="margin-left: -17%;">关闭</span>
+		<span id="quren" class="pro_jb" style="margin-left: -17%;" onclick="toGrouponMainPage();">关闭</span>
 	</div>
 	
 	<div class="main2">
