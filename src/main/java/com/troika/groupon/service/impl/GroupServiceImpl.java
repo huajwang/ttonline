@@ -651,7 +651,7 @@ public class GroupServiceImpl implements GroupService {
 	 * 通过发起人获取项目列表
 	 */
 	@Override
-	public List<Map<String, Object>> findProjectByCreateUser(Integer createUser) {
+	public List<Map<String, Object>> findProjectByCreateUser(Long createUser) {
 		return groupProjectDao.findProjectByCreateUser(createUser);
 	}
 

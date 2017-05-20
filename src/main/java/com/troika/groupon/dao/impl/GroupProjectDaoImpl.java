@@ -166,7 +166,7 @@ public class GroupProjectDaoImpl implements GroupProjectDao {
 	 * 通过发起人id获取项目列表
 	 */
 	@Override
-	public List<Map<String, Object>> findProjectByCreateUser(Integer createUser) {
+	public List<Map<String, Object>> findProjectByCreateUser(Long createUser) {
 		String sql = "select * from t_groupon_project where createUser = ?";
 		Query query = entityManager.createNativeQuery(sql);
 		query.setParameter(1, createUser);

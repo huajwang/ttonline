@@ -185,7 +185,7 @@ public class SponsorController extends BaseController {
 			TMallUser user = (TMallUser) request.getSession().getAttribute(
 					Constant.LOGIN_USER);
 			List<Map<String, Object>> list = groupService
-					.findProjectByCreateUser((int) user.getId());
+					.findProjectByCreateUser(user.getId());
 			for (Map<String, Object> map : list) {
 				List<Map<String, Object>> orders = groupService
 						.getOrderListByProjectId((int) map.get("id"));

@@ -287,7 +287,7 @@ public interface GroupService {
 	 * @param CreateUser
 	 * @return 
 	 */
-	public List<Map<String, Object>> findProjectByCreateUser(Integer createUser);
+	public List<Map<String, Object>> findProjectByCreateUser(Long createUser);
 
 	/**
 	 * 保存项目列表

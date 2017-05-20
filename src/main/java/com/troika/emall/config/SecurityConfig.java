@@ -93,7 +93,9 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 		http
 		.csrf().disable()
 		.authorizeRequests()
-		.antMatchers("/member/**", "/orders/**", "/cart/**", "/groupon/personal").authenticated()
+		.antMatchers("/member/**", "/orders/**", "/cart/**", 
+					 "/groupon/personal/**", "/groupon/project/**", "/groupon/launch/**")
+			.authenticated()
 		.antMatchers(HttpMethod.POST, "/spittles").authenticated()
 		.anyRequest().permitAll()
 		.and()
