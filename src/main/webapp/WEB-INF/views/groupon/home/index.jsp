@@ -4,20 +4,22 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>欢乐拼</title>
-<script
-	src="http://www.xmtroika.com/ttmall/webjars/sockjs-client/1.0.0/sockjs.min.js"></script>
-<script
-	src="http://www.xmtroika.com/ttmall/webjars/stomp-websocket/2.3.3/stomp.min.js"></script>
-<!-- default.css in public.jsp  cause loading page extremly slow-->
-<%@ include file="/common/public.jsp"%>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>欢乐拼</title>
+	<script
+		src="http://cdn.jsdelivr.net/webjars/org.webjars/sockjs-client/1.1.2/sockjs.min.js">
+	</script>
+	<script
+		src="http://cdn.jsdelivr.net/webjars/org.webjars/stomp-websocket/2.3.3-1/stomp.min.js">
+	</script>
+	<%@ include file="/common/public.jsp"%>
 </head>
 <body class="bgcolor2">
 	<script>
       var sock = new SockJS('/ttmall/spittr');
       var stomp = Stomp.over(sock);
       stomp.connect('guest', 'guest', function(frame) {
+    	  alert("aaa")
         stomp.subscribe("/topic/spittlefeed", handleSpittle);
         stomp.subscribe("/user/queue/notifications", handleNotification);
       });
