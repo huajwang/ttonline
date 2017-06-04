@@ -5,6 +5,7 @@ import java.util.Date;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.messaging.handler.annotation.MessageMapping;
+import org.springframework.messaging.handler.annotation.SendTo;
 import org.springframework.messaging.simp.annotation.SendToUser;
 import org.springframework.stereotype.Controller;
 
@@ -19,12 +20,12 @@ public class SpittrMessageController {
   }
   
   @MessageMapping("/spittle")
-  @SendToUser("/queue/notifications")
-  public Notification handleSpittle(Principal principal, SpittleForm form) {
-	  System.out.println("principal = " + principal.getName());
-	  Spittle spittle = new Spittle(principal.getName(), form.getText(), new Date());
-	  feedService.broadcastSpittle(spittle);
-	  return new Notification("Saved Spittle for user: " + principal.getName());
+  @SendTo("/topic/customerservice")
+  public Notification handleSpittle(SpittleForm form) {
+	  System.out.println("principal = ");
+	  //Spittle spittle = new Spittle(principal.getName(), form.getText(), new Date());
+	  //feedService.broadcastSpittle(spittle);
+	  return new Notification(form.getText());
   }
   
 }

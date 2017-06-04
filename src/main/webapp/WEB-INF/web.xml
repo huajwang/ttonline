@@ -5,7 +5,7 @@
 	id="WebApp_ID" version="2.5">
 	<display-name>ttmall</display-name>
 	<!-- 字符集过滤器 -->
-	<!-- filter>
+	<filter>
 		<filter-name>characterEncodingFilter</filter-name>
 		<filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
 		<init-param>
@@ -24,7 +24,7 @@
 	<filter-mapping>
 		<filter-name>characterEncodingFilter</filter-name>
 		<url-pattern>*.api</url-pattern>
-	</filter-mapping -->
+	</filter-mapping>
 	
 	 <!-- 普通用户 -->
 	<context-param>

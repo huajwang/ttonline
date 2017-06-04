@@ -1,6 +1,4 @@
-<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
+<%@ page language="java" pageEncoding="UTF-8"%>
 <!doctype html>
 <html>
 <head>
@@ -16,20 +14,27 @@
 <link rel="stylesheet" type="text/css"
 	href="${ctx}/resources/css/yly_zjw.css">
 
-<link href="${ctx}/resources/css/city-picker.css" rel="stylesheet">
 <link href="${ctx}/resources/css/main.css" rel="stylesheet">
+
+<script
+	src="http://cdn.jsdelivr.net/webjars/org.webjars/sockjs-client/1.1.2/sockjs.min.js">
+	</script>
+<script
+	src="http://cdn.jsdelivr.net/webjars/org.webjars/stomp-websocket/2.3.3-1/stomp.min.js">
+	</script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 
 <script src="${ctx}/resources/js/jquery.js"></script>
 <script src="${ctx}/resources/js/icheck.js"></script>
 <script src="${ctx}/resources/js/layer/layer.js"></script>
 <script type="text/javascript" src="${ctx}/resources/js/touchslider.js"></script>
 <script type="text/javascript"
-	src="${ctx}/resources/js/jquery-2.1.4/jquery-2.1.4/jquery.min.js"></script>
-<script type="text/javascript"
 	src="${ctx}/resources/js/qrcode/jquery.qrcode.min.js"></script>
 <script src="${ctx}/resources/js/activityProductDetail.js"></script>
-<script type="text/javascript"
-	src="http://res.wx.qq.com/open/js/jweixin-1.1.0.js"></script>
 <script type="text/javascript" src="${ctx}/resources/js/zepto.min.js"></script>
 <script type="text/javascript">
 	var price = "${activity.promotionPrice}";
@@ -58,6 +63,32 @@ $(document).ready(function(){
 </script>
 </head>
 <body>
+<script type="text/javascript">
+	var sock;
+	var stomp;
+	function connect() {
+	      sock = new SockJS('/ttmall/spittr');
+	      stomp = Stomp.over(sock);
+	      stomp.connect('guest', 'guest', function(frame) {
+	    	  alert("connected")
+	        stomp.subscribe("/topic/spittlefeed", handleSpittle);
+	        stomp.subscribe("/topic/aaa", handleReply);
+	      });
+	      function handleSpittle(message) {
+	      	  alert('handle spittle: ' + JSON.parse(message.body).message);
+	        }
+	        
+	        function handleReply(message) {
+	            alert('handle Notification: ' + JSON.parse(message.body).chatMessage);
+	          }
+	}
+	
+    function sendMessage() {
+    	var text = $('#msg_input').val()
+        stomp.send("/app/spittle", {}, 
+            JSON.stringify({ 'text': text }));
+    }
+</script>
 <!-- 	<div id="subscribe" style="z-index: 99999;position: fixed;"></div> -->
 	<div class="tachu tchurecord"
 		style="display: none; height: 300px; overflow: hidden;">
@@ -251,12 +282,20 @@ $(document).ready(function(){
 					<a href="">免运费</a>
 				</div>
 			</div>
-			<div class="fuwu">
+			<!-- div class="fuwu">
 				<div class="chanpwz">服务：</div>
 				<div class="fwsm" style="margin: 0;">
 					<span>支持七天无理由退货</span>
 				</div>
-			</div>
+			</div-->
+			<div class="input-group">
+        	<input id="msg_input" type="text" class="form-control" placeholder="Search Blog..">
+        	<span class="input-group-btn">
+          		<button class="btn btn-default" type="button" onclick="sendMessage()">
+            		<span class="glyphicon glyphicon-search"></span>
+          		</button>
+        	</span>
+    	</div>
 		</div>
 		
 		
@@ -311,12 +350,12 @@ $(document).ready(function(){
   	描述：返回顶部
   -->
 	<a class="yl_bc32" id="returnTop" >顶部</a>
-
+	
 	<div class="foot3_up" style="z-index: 999;">
-		<div class="shouc">
-			<img src="${ctx}/resources/img/activity/inquiry.PNG" id="changePic"height="30px" />
+		<div id="query" class="shouc" onclick = "connect()">
+			<img src="${ctx}/resources/img/activity/inquiry.PNG" id="changePic" height="30px"/>
 			<br />
-			<span class="yly_color8"><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=2088151366&site=qq&menu=yes">咨询</a></span>
+			<span id='spantest' class="yly_color8">咨询</span>
 		</div>
 		<div class="ylypay">
 			<div id="purchase" class="ylypay_an yly_bg_gc" style="width: 100%;background-color: red;">立即抢购</div>
@@ -326,7 +365,6 @@ $(document).ready(function(){
 				<span class="yly_color8">分享</span>
 		</div>
 	</div>
-
 <!-- 	kefu -->
 <!-- 		<div id="div" class="qqke"> -->
 <!-- 			 <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=2088151366&site=qq&menu=yes"> -->
@@ -338,9 +376,6 @@ $(document).ready(function(){
 	<div id="code" class="qrcode" onblur="this.style.display='none';" style="display: none;"></div>
 	<!-- 二维码 -->
 
-	<script src="${ctx}/resources/js/bootstrap.js"></script>
-	<script src="${ctx}/resources/js/city-picker.data.js"></script>
-	<script src="${ctx}/resources/js/city-picker.js"></script>
 	<script src="${ctx}/resources/js/main.js"></script>
 </body>
 <script>
@@ -472,7 +507,6 @@ $(document).ready(function(){
 		$(".shouc").click(function() {
 			ShareClick();
 		});
-
 	})
 
 	var tt = new TouchSlider({

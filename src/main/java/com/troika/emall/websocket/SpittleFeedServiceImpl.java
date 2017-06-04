@@ -17,16 +17,17 @@ public class SpittleFeedServiceImpl implements SpittleFeedService {
 	public SpittleFeedServiceImpl(SimpMessagingTemplate messaging) {
 		this.messaging = messaging;
 	}
-	
+
+	@Override
 	public void broadcastSpittle(Spittle spittle) {
 		messaging.convertAndSend("/topic/spittlefeed", spittle);
-		
 		Matcher matcher = pattern.matcher(spittle.getMessage());
 		if (matcher.find()) {
 			String username = matcher.group(1);
 			messaging.convertAndSendToUser(username, "/queue/notifications",
 					new Notification("You just got mentioned!"));
 		}
+		
 	}
 	
 }
