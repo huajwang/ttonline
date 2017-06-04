@@ -4,32 +4,37 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<title>欢乐拼</title>
-	<script
-		src="http://cdn.jsdelivr.net/webjars/org.webjars/sockjs-client/1.1.2/sockjs.min.js">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>欢乐拼</title>
+<script
+	src="http://cdn.jsdelivr.net/webjars/org.webjars/sockjs-client/1.1.2/sockjs.min.js">
 	</script>
-	<script
-		src="http://cdn.jsdelivr.net/webjars/org.webjars/stomp-websocket/2.3.3-1/stomp.min.js">
+<script
+	src="http://cdn.jsdelivr.net/webjars/org.webjars/stomp-websocket/2.3.3-1/stomp.min.js">
 	</script>
-	<%@ include file="/common/public.jsp"%>
+<%@ include file="/common/public.jsp"%>
 </head>
 <body class="bgcolor2">
 	<script>
       var sock = new SockJS('/ttmall/spittr');
       var stomp = Stomp.over(sock);
       stomp.connect('guest', 'guest', function(frame) {
-    	  alert("aaa")
         stomp.subscribe("/topic/spittlefeed", handleSpittle);
         stomp.subscribe("/user/queue/notifications", handleNotification);
       });
       
       function handleSpittle(message) {
-    	  alert('Spittle:', message);
+    	  alert('handle spittle: ' + JSON.parse(message.body).message);
+    	  $('#output').append("<b>Received spittle: " + JSON.parse(message.body).message + "</b><br/>");
       }
       
+      function handleNotification(message) {
+          alert('handle Notification: ' + JSON.parse(message.body).message);
+          $('#output').append("<b>Received: " + 
+              JSON.parse(message.body).message + "</b><br/>")
+        }
+
       function sendSpittle(text) {
-          console.log('Sending Spittle');
           stomp.send("/app/spittle", {}, 
               JSON.stringify({ 'text': text }));
         }
@@ -186,6 +191,7 @@
 									</div> -->
 								</div>
 								<div class="zhichi_r fontcolor3">已获得${item.orderNum }次支持</div>
+								<div id="output">i am here</div>
 							</div>
 						</div>
 						<!-- 信息 -->
@@ -231,13 +237,6 @@
 				$("#SelectProject").show();
 			}
 		})
-
-		
-		//$('.wybz').on(
-			//	'click',
-				//function() {
-				//	window.location.href=ctx+"/groupon/homeprojectdetail";
-				//});
 	});
 	function Submit(id){
 		window.location.href=ctx+"/groupon/homeprojectdetail?id="+id;
