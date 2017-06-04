@@ -23,7 +23,7 @@ $(document).ready(function() {
 });
 
 function handleSpittle(message) {
-	$('#msg').text(JSON.parse(message.body).chatMessage)
+	$('#msg').text(JSON.parse(message.body).message)
 }
 
 </script>
