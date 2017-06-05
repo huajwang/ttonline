@@ -1,4 +1,6 @@
-<%@ page language="java" pageEncoding="UTF-8"%>
+<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <!doctype html>
 <html>
 <head>
@@ -8,34 +10,28 @@
 <meta name="format-detection" content="telephone=yes">
 <title>${good.gName }详细信息</title>
 <%@ include file="/common/include.rec.ftl"%>
-<link href="${ctx}/resources/css/css.css" rel="stylesheet"
-	type="text/css">
+<link href="${ctx}/resources/css/css.css" rel="stylesheet" type="text/css">
 <link href="${ctx}/resources/css/red.css" rel="stylesheet">
-<link rel="stylesheet" type="text/css"
-	href="${ctx}/resources/css/yly_zjw.css">
-
+<link rel="stylesheet" type="text/css" href="${ctx}/resources/css/yly_zjw.css">
 <link href="${ctx}/resources/css/main.css" rel="stylesheet">
 
-<script
-	src="http://cdn.jsdelivr.net/webjars/org.webjars/sockjs-client/1.1.2/sockjs.min.js">
-	</script>
-<script
-	src="http://cdn.jsdelivr.net/webjars/org.webjars/stomp-websocket/2.3.3-1/stomp.min.js">
-	</script>
-
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
+<script src="http://cdn.jsdelivr.net/webjars/org.webjars/sockjs-client/1.1.2/sockjs.min.js"></script>
+<script src="http://cdn.jsdelivr.net/webjars/org.webjars/stomp-websocket/2.3.3-1/stomp.min.js"></script>
 
 <script src="${ctx}/resources/js/jquery.js"></script>
 <script src="${ctx}/resources/js/icheck.js"></script>
 <script src="${ctx}/resources/js/layer/layer.js"></script>
 <script type="text/javascript" src="${ctx}/resources/js/touchslider.js"></script>
-<script type="text/javascript"
-	src="${ctx}/resources/js/qrcode/jquery.qrcode.min.js"></script>
+<script type="text/javascript" src="${ctx}/resources/js/qrcode/jquery.qrcode.min.js"></script>
 <script src="${ctx}/resources/js/activityProductDetail.js"></script>
 <script type="text/javascript" src="${ctx}/resources/js/zepto.min.js"></script>
+
+<script src="${ctx}/resources/js/bootstrap.js"></script>
+<script src="${ctx}/resources/js/city-picker.data.js"></script>
+<script src="${ctx}/resources/js/city-picker.js"></script>
+<script src="${ctx}/resources/js/main.js"></script>
+
+
 <script type="text/javascript">
 	var price = "${activity.promotionPrice}";
 	var productId = "${good.id}";// 产品Id
@@ -64,7 +60,6 @@ $(document).ready(function(){
 </head>
 <body>
 <script type="text/javascript">
-	var sock;
 	var stomp;
 	function connect() {
 	      sock = new SockJS('/ttmall/spittr');
@@ -89,7 +84,7 @@ $(document).ready(function(){
             JSON.stringify({ 'text': text }));
     }
 </script>
-<!-- 	<div id="subscribe" style="z-index: 99999;position: fixed;"></div> -->
+
 	<div class="tachu tchurecord"
 		style="display: none; height: 300px; overflow: hidden;">
 		<div class="tcreco">
@@ -302,11 +297,7 @@ $(document).ready(function(){
 		
 
 		
-		<!--
-   	作者：787711932@qq.com
-   	时间：2016-04-28
-   	描述：查看分类，进店逛逛
-   -->
+		<!-- 描述：查看分类，进店逛逛 -->
 		<div class="yly_inde">
 			<div class="yly_inde_top">
 				<div class="yly_tt" style="width: 65%">
@@ -322,17 +313,6 @@ $(document).ready(function(){
 					style="margin: 0.5rem 0;">返回首页</div>
 			</div>
 		</div>
-		<!--
-   	作者：787711932@qq.com
-   	时间：2016-04-28
-   	描述：推荐产品
-   -->
-
-		<!--
-   	作者：787711932@qq.com
-   	时间：2016-04-28
-   	描述：产品详情图
-   -->
 		<c:choose>
 			<c:when test="${not empty good.DetialImg}">
 				<c:forEach items="${good.DetialImg}" var="item" varStatus="vs">
@@ -344,11 +324,7 @@ $(document).ready(function(){
 		</c:choose>
 	</div>
 
-	<!--
-  	作者：787711932@qq.com
-  	时间：2016-04-28
-  	描述：返回顶部
-  -->
+	<!-- 描述：返回顶部 -->
 	<a class="yl_bc32" id="returnTop" >顶部</a>
 	
 	<div class="foot3_up" style="z-index: 999;">
@@ -362,7 +338,7 @@ $(document).ready(function(){
 		</div>
 		<div class="cart" id="qrcode"  onClick="with(document.getElementById('code')){style.display='';tabIndex = 1;focus();}" >
 			 <img src="${ctx}/resources/img/activity/share.PNG" height="30px" /><br />
-				<span class="yly_color8">分享</span>
+			 <span class="yly_color8">分享</span>
 		</div>
 	</div>
 <!-- 	kefu -->
@@ -375,8 +351,6 @@ $(document).ready(function(){
 	<!-- 二维码 -->
 	<div id="code" class="qrcode" onblur="this.style.display='none';" style="display: none;"></div>
 	<!-- 二维码 -->
-
-	<script src="${ctx}/resources/js/main.js"></script>
 </body>
 <script>
 	var colorArr = [],sizeArr = [],styleArr = [];
@@ -503,9 +477,6 @@ $(document).ready(function(){
 			}else{
 				buy();
 			}
-		});
-		$(".shouc").click(function() {
-			ShareClick();
 		});
 	})
 
