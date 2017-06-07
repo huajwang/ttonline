@@ -14,6 +14,7 @@
 <link href="${ctx}/resources/css/red.css" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="${ctx}/resources/css/yly_zjw.css">
 <link href="${ctx}/resources/css/main.css" rel="stylesheet">
+<link href="${ctx}/resources/css/bootstrap.css" rel="stylesheet"></link>
 
 <script src="http://cdn.jsdelivr.net/webjars/org.webjars/sockjs-client/1.1.2/sockjs.min.js"></script>
 <script src="http://cdn.jsdelivr.net/webjars/org.webjars/stomp-websocket/2.3.3-1/stomp.min.js"></script>
@@ -50,11 +51,6 @@ $(document).ready(function(){
   $("#returnTop").click(function(){
     $(".main1").animate({scrollTop: '0px'}, 200);
   });
-//   var subscribe = '${subscribe}',
-//   Con = $('#subscribe');
-//   if(subscribe!=null &&subscribe!=''&&subscribe==1){
-// 	  Con.append('<a href="javascript:void(0);"><img src="${ctx}/resources/img/subscribe/subscribe.png" width="100%" height="50px"></a>');
-//   }
 });
 </script>
 </head>
